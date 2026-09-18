@@ -1,0 +1,29 @@
+[4.657s] Invoking command in '/home/md/amr_final_ws/build/robile_planning': PYTHONPATH=/home/md/amr_final_ws/build/robile_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/md/amr_final_ws/install/robile_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/md/amr_final_ws/build/robile_planning/build --no-deps symlink_data
+[6.250s] running develop
+[7.472s] running egg_info
+[7.474s] creating robile_planning.egg-info
+[7.475s] writing robile_planning.egg-info/PKG-INFO
+[7.475s] writing dependency_links to robile_planning.egg-info/dependency_links.txt
+[7.476s] writing entry points to robile_planning.egg-info/entry_points.txt
+[7.476s] writing requirements to robile_planning.egg-info/requires.txt
+[7.477s] writing top-level names to robile_planning.egg-info/top_level.txt
+[7.477s] writing manifest file 'robile_planning.egg-info/SOURCES.txt'
+[7.485s] reading manifest file 'robile_planning.egg-info/SOURCES.txt'
+[7.487s] writing manifest file 'robile_planning.egg-info/SOURCES.txt'
+[7.498s] running build_ext
+[7.499s] Creating /home/md/amr_final_ws/install/robile_planning/lib/python3.10/site-packages/robile-planning.egg-link (link to .)
+[7.505s] Installing global_planner script to /home/md/amr_final_ws/install/robile_planning/lib/robile_planning
+[7.505s] Installing potential_field_planner script to /home/md/amr_final_ws/install/robile_planning/lib/robile_planning
+[7.506s] 
+[7.508s] Installed /home/md/amr_final_ws/build/robile_planning
+[7.508s] running symlink_data
+[7.508s] creating /home/md/amr_final_ws/install/robile_planning/share/ament_index
+[7.509s] creating /home/md/amr_final_ws/install/robile_planning/share/ament_index/resource_index
+[7.509s] creating /home/md/amr_final_ws/install/robile_planning/share/ament_index/resource_index/packages
+[7.510s] symbolically linking /home/md/amr_final_ws/build/robile_planning/resource/robile_planning -> /home/md/amr_final_ws/install/robile_planning/share/ament_index/resource_index/packages
+[7.510s] symbolically linking /home/md/amr_final_ws/build/robile_planning/package.xml -> /home/md/amr_final_ws/install/robile_planning/share/robile_planning
+[7.510s] creating /home/md/amr_final_ws/install/robile_planning/share/robile_planning/launch
+[7.511s] symbolically linking /home/md/amr_final_ws/build/robile_planning/launch/planning.launch.py -> /home/md/amr_final_ws/install/robile_planning/share/robile_planning/launch
+[7.514s] creating /home/md/amr_final_ws/install/robile_planning/share/robile_planning/config
+[7.516s] symbolically linking /home/md/amr_final_ws/build/robile_planning/config/planning_params.yaml -> /home/md/amr_final_ws/install/robile_planning/share/robile_planning/config
+[7.694s] Invoked command in '/home/md/amr_final_ws/build/robile_planning' returned '0': PYTHONPATH=/home/md/amr_final_ws/build/robile_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/md/amr_final_ws/install/robile_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/md/amr_final_ws/build/robile_planning/build --no-deps symlink_data

@@ -1,0 +1,41 @@
+[0.052s] Invoking command in '/home/md/amr_final_ws/build/kelo_tulip': /usr/bin/cmake /home/md/amr_final_ws/src/kelo_tulip -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/kelo_tulip
+[0.077s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.077s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.078s]   CMake.
+[0.078s] 
+[0.078s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.078s]   CMake that the project does not need compatibility with older versions.
+[0.078s] 
+[0.078s] [0m
+[0.384s] -- The C compiler identification is GNU 11.4.0
+[0.672s] -- The CXX compiler identification is GNU 11.4.0
+[0.695s] -- Detecting C compiler ABI info
+[0.946s] -- Detecting C compiler ABI info - done
+[1.001s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.003s] -- Detecting C compile features
+[1.006s] -- Detecting C compile features - done
+[1.025s] -- Detecting CXX compiler ABI info
+[1.410s] -- Detecting CXX compiler ABI info - done
+[1.473s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.474s] -- Detecting CXX compile features
+[1.477s] -- Detecting CXX compile features - done
+[1.560s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[1.560s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[1.561s]   asked CMake to find a package configuration file provided by "catkin", but
+[1.561s]   CMake did not find one.
+[1.561s] 
+[1.567s]   Could not find a package configuration file provided by "catkin" with any
+[1.567s]   of the following names:
+[1.568s] 
+[1.568s]     catkinConfig.cmake
+[1.569s]     catkin-config.cmake
+[1.570s] 
+[1.570s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[1.570s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[1.571s]   provides a separate development package or SDK, be sure it has been
+[1.571s]   installed.
+[1.571s] 
+[1.572s] [0m
+[1.572s] -- Configuring incomplete, errors occurred!
+[1.572s] See also "/home/md/amr_final_ws/build/kelo_tulip/CMakeFiles/CMakeOutput.log".
+[1.581s] Invoked command in '/home/md/amr_final_ws/build/kelo_tulip' returned '1': /usr/bin/cmake /home/md/amr_final_ws/src/kelo_tulip -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/kelo_tulip

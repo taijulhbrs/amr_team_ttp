@@ -1,0 +1,68 @@
+[0.062s] Invoking command in '/home/md/amr_final_ws/build/robile_description': CMAKE_PREFIX_PATH=/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/md/amr_final_ws/src/robile_description -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_description
+[0.129s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.633s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.036s] -- Configuring done
+[1.055s] -- Generating done
+[1.063s] -- Build files have been written to: /home/md/amr_final_ws/build/robile_description
+[1.315s] Invoked command in '/home/md/amr_final_ws/build/robile_description' returned '0': CMAKE_PREFIX_PATH=/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/md/amr_final_ws/src/robile_description -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_description
+[1.331s] Invoking command in '/home/md/amr_final_ws/build/robile_description': CMAKE_PREFIX_PATH=/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/md/amr_final_ws/build/robile_description -- -j8 -l8
+[1.528s] Invoked command in '/home/md/amr_final_ws/build/robile_description' returned '0': CMAKE_PREFIX_PATH=/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/md/amr_final_ws/build/robile_description -- -j8 -l8
+[1.588s] Invoking command in '/home/md/amr_final_ws/build/robile_description': CMAKE_PREFIX_PATH=/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/md/amr_final_ws/build/robile_description
+[1.627s] -- Install configuration: ""
+[1.628s] -- Execute custom install script
+[1.633s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/kelo_drive/kelo_drive_base.dae
+[1.634s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/kelo_drive/kelo_drive_wheel.dae
+[1.638s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/passive_caster_wheel/pivot.dae
+[1.639s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/passive_caster_wheel/wheel.dae
+[1.640s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/general_brick_housing.dae
+[1.641s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/lid.dae
+[1.642s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/lid_cover_blue.dae
+[1.643s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/lid_cover_green.dae
+[1.644s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/lid_cover_red.dae
+[1.646s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/lid_cover_yellow.dae
+[1.646s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/wheeled_brick_housing.dae
+[1.647s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/sensors/hokuyo.dae
+[1.647s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/sensors/hokuyo_convex.dae
+[1.647s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/sensors/sick-lms1xx.dae
+[1.648s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//robots/2_wheel_config.urdf.xacro
+[1.649s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//robots/4_wheel_config.urdf.xacro
+[1.650s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//robots/6_wheel_config.urdf.xacro
+[1.651s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//robots/robile3_config.urdf.xacro
+[1.653s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/brick_housing.urdf.xacro
+[1.664s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/common.xacro
+[1.665s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/kelo_drive.urdf.xacro
+[1.665s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/kelo_drive_wheel.urdf.xacro
+[1.666s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/materials.urdf.xacro
+[1.666s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/passive_caster_wheel.urdf.xacro
+[1.667s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_active_wheel_brick.urdf.xacro
+[1.667s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_cpu_brick.urdf.xacro
+[1.668s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_empty_brick.urdf.xacro
+[1.670s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_master_battery_brick.urdf.xacro
+[1.676s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_passive_wheel_brick.urdf.xacro
+[1.676s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_slave_battery_brick.urdf.xacro
+[1.676s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/camera_front.gazebo.xacro
+[1.677s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/camera_front.urdf.xacro
+[1.677s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/hokuyo_urg04_laser.gazebo.xacro
+[1.677s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/hokuyo_urg04_laser.urdf.xacro
+[1.677s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/sick_lms1xx.urdf.xacro
+[1.678s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/sick_lms1xx_mount.urdf.xacro
+[1.678s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//gazebo/gazebo_robile.xacro
+[1.678s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//gazebo/gazebo_robile_laser_scanner.xacro
+[1.678s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//gazebo/gazebo_robile_laserscanner_camera.xacro
+[1.680s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//gazebo/gazebo_ros_control.xacro
+[1.681s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description//gazebo/gazebo_ros_planar_move.xacro
+[1.681s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/ament_index/resource_index/package_run_dependencies/robile_description
+[1.681s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/ament_index/resource_index/parent_prefix_path/robile_description
+[1.681s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description/environment/ament_prefix_path.sh
+[1.681s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description/environment/ament_prefix_path.dsv
+[1.684s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description/environment/path.sh
+[1.684s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description/environment/path.dsv
+[1.684s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description/local_setup.bash
+[1.692s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description/local_setup.sh
+[1.693s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description/local_setup.zsh
+[1.693s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description/local_setup.dsv
+[1.693s] -- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/package.dsv
+[1.725s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/ament_index/resource_index/packages/robile_description
+[1.728s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description/cmake/robile_descriptionConfig.cmake
+[1.728s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description/cmake/robile_descriptionConfig-version.cmake
+[1.730s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_description/share/robile_description/package.xml

@@ -1,0 +1,2 @@
+Invoking command in '/home/md/amr_final_ws/build/kelo_tulip': /usr/bin/cmake /home/md/amr_final_ws/src/kelo_tulip -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/kelo_tulip
+Invoked command in '/home/md/amr_final_ws/build/kelo_tulip' returned '1': /usr/bin/cmake /home/md/amr_final_ws/src/kelo_tulip -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/kelo_tulip

@@ -1,0 +1,148 @@
+[0.031s] Invoking command in '/home/md/amr_final_ws/build/robile_gazebo': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_description:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake /home/md/amr_final_ws/src/robile_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_gazebo
+[0.237s] -- The C compiler identification is GNU 11.4.0
+[0.439s] -- The CXX compiler identification is GNU 11.4.0
+[0.465s] -- Detecting C compiler ABI info
+[0.741s] -- Detecting C compiler ABI info - done
+[0.775s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.775s] -- Detecting C compile features
+[0.778s] -- Detecting C compile features - done
+[0.791s] -- Detecting CXX compiler ABI info
+[1.117s] -- Detecting CXX compiler ABI info - done
+[1.172s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.175s] -- Detecting CXX compile features
+[1.175s] -- Detecting CXX compile features - done
+[1.192s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.145s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.490s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.659s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[2.871s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.901s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.950s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.013s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.102s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.299s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.315s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.674s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.812s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.997s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.036s] -- Looking for pthread.h
+[4.332s] -- Looking for pthread.h - found
+[4.336s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.917s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.927s] -- Found Threads: TRUE  
+[5.309s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[5.313s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[5.313s]   does not match the name of the calling package (gazebo).  This can lead to
+[5.313s]   problems in calling code that expects `find_package` result variables
+[5.314s]   (e.g., `_FOUND`) to follow a certain pattern.
+[5.314s] Call Stack (most recent call first):
+[5.314s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[5.314s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[5.315s]   CMakeLists.txt:16 (find_package)
+[5.315s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[5.315s] [0m
+[5.315s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[5.332s] -- Checking for module 'bullet>=2.82'
+[5.429s] --   Found bullet, version 3.05
+[6.311s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[6.732s] -- Found assimp: /usr/include (found version "5.2.0") 
+[6.833s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[7.035s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[7.120s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[7.162s] -- Looking for ignition-math6 -- found version 6.15.1
+[7.182s] -- Searching for dependencies of ignition-math6
+[7.194s] -- Looking for OGRE...
+[7.198s] -- OGRE_PREFIX_WATCH changed.
+[7.250s] -- Checking for module 'OGRE'
+[7.374s] --   Found OGRE, version 1.9.0
+[7.755s] -- Found Ogre Ghadamon (1.9.0)
+[7.806s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[7.857s] -- Looking for OGRE_Paging...
+[7.899s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[7.902s] -- Looking for OGRE_Terrain...
+[7.965s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[7.965s] -- Looking for OGRE_Property...
+[8.008s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[8.011s] -- Looking for OGRE_RTShaderSystem...
+[8.064s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[8.069s] -- Looking for OGRE_Volume...
+[8.155s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[8.159s] -- Looking for OGRE_Overlay...
+[8.197s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[9.384s] -- Looking for ignition-math6 -- found version 6.15.1
+[9.397s] -- Looking for ignition-transport8 -- found version 8.2.1
+[9.399s] -- Searching for dependencies of ignition-transport8
+[9.494s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[9.551s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[9.575s] -- Checking for module 'libzmq >= 4'
+[9.711s] --   Found libzmq , version 4.3.4
+[10.145s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[10.205s] -- Checking for module 'uuid'
+[10.338s] --   Found uuid, version 2.37.2
+[10.583s] -- Found UUID: TRUE  
+[10.593s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[10.598s] -- Searching for dependencies of ignition-msgs5
+[10.673s] -- Looking for ignition-math6 -- found version 6.15.1
+[10.696s] -- Checking for module 'tinyxml2'
+[10.768s] --   Found tinyxml2, version 9.0.0
+[11.025s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[11.046s] -- Looking for ignition-common3 -- found version 3.14.0
+[11.051s] -- Searching for dependencies of ignition-common3
+[11.056s] -- Looking for dlfcn.h - found
+[11.064s] -- Looking for libdl - found
+[11.070s] -- Found DL: TRUE  
+[11.153s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[11.154s] -- Searching for <ignition-common3> component [graphics]
+[11.168s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[11.174s] -- Searching for dependencies of ignition-common3-graphics
+[11.174s] -- Looking for ignition-math6 -- found version 6.15.1
+[11.194s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[11.194s] -- Searching for dependencies of ignition-fuel_tools4
+[12.022s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[12.121s] -- Checking for module 'jsoncpp'
+[12.241s] --   Found jsoncpp, version 1.9.5
+[12.565s] -- Found JSONCPP: TRUE  
+[12.616s] -- Checking for module 'libzip'
+[12.714s] --   Found libzip, version 1.7.3
+[13.008s] -- Found ZIP: TRUE  
+[13.011s] -- Looking for ignition-common3 -- found version 3.14.0
+[13.016s] -- Looking for ignition-math6 -- found version 6.15.1
+[13.020s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[13.063s] -- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[13.082s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[13.239s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[13.399s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[13.553s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[14.166s] -- Configuring done
+[14.187s] -- Generating done
+[14.201s] -- Build files have been written to: /home/md/amr_final_ws/build/robile_gazebo
+[14.261s] Invoked command in '/home/md/amr_final_ws/build/robile_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_description:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake /home/md/amr_final_ws/src/robile_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_gazebo
+[14.265s] Invoking command in '/home/md/amr_final_ws/build/robile_gazebo': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_description:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --build /home/md/amr_final_ws/build/robile_gazebo -- -j8 -l8
+[14.453s] Invoked command in '/home/md/amr_final_ws/build/robile_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_description:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --build /home/md/amr_final_ws/build/robile_gazebo -- -j8 -l8
+[14.456s] Invoking command in '/home/md/amr_final_ws/build/robile_gazebo': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_description:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --install /home/md/amr_final_ws/build/robile_gazebo
+[14.498s] -- Install configuration: ""
+[14.499s] -- Execute custom install script
+[14.500s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//config/doxygen/Doxyfile.in
+[14.534s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//config/rviz/robile.rviz
+[14.565s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//config/rviz/robile_foxy_nav.rviz
+[14.599s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//config/rviz/robile_rolling.rviz
+[14.635s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//launch/gazebo_4_wheel.launch.py
+[14.667s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//worlds/closed_walls.world
+[14.702s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//worlds/potential_field_gazebo.world
+[14.738s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/ament_index/resource_index/package_run_dependencies/robile_gazebo
+[14.770s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/ament_index/resource_index/parent_prefix_path/robile_gazebo
+[14.805s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/environment/ament_prefix_path.sh
+[14.839s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/environment/ament_prefix_path.dsv
+[14.882s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/environment/path.sh
+[14.915s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/environment/path.dsv
+[14.942s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/local_setup.bash
+[14.973s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/local_setup.sh
+[15.009s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/local_setup.zsh
+[15.039s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/local_setup.dsv
+[15.067s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/package.dsv
+[15.101s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/ament_index/resource_index/packages/robile_gazebo
+[15.132s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.163s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/cmake/robile_gazeboConfig.cmake
+[15.193s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/cmake/robile_gazeboConfig-version.cmake
+[15.232s] -- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/package.xml
+[15.269s] Invoked command in '/home/md/amr_final_ws/build/robile_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_description:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --install /home/md/amr_final_ws/build/robile_gazebo

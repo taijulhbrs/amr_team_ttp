@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "robile_interfaces__rs",
+		"source" : "/home/md/amr_final_ws/build/robile_interfaces/robile_interfaces__rs"
+	}
+}

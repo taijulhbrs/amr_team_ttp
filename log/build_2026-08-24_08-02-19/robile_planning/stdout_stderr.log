@@ -1,0 +1,27 @@
+running develop
+running egg_info
+creating robile_planning.egg-info
+writing robile_planning.egg-info/PKG-INFO
+writing dependency_links to robile_planning.egg-info/dependency_links.txt
+writing entry points to robile_planning.egg-info/entry_points.txt
+writing requirements to robile_planning.egg-info/requires.txt
+writing top-level names to robile_planning.egg-info/top_level.txt
+writing manifest file 'robile_planning.egg-info/SOURCES.txt'
+reading manifest file 'robile_planning.egg-info/SOURCES.txt'
+writing manifest file 'robile_planning.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/md/amr_final_ws/install/robile_planning/lib/python3.10/site-packages/robile-planning.egg-link (link to .)
+Installing global_planner script to /home/md/amr_final_ws/install/robile_planning/lib/robile_planning
+Installing potential_field_planner script to /home/md/amr_final_ws/install/robile_planning/lib/robile_planning
+
+Installed /home/md/amr_final_ws/build/robile_planning
+running symlink_data
+creating /home/md/amr_final_ws/install/robile_planning/share/ament_index
+creating /home/md/amr_final_ws/install/robile_planning/share/ament_index/resource_index
+creating /home/md/amr_final_ws/install/robile_planning/share/ament_index/resource_index/packages
+symbolically linking /home/md/amr_final_ws/build/robile_planning/resource/robile_planning -> /home/md/amr_final_ws/install/robile_planning/share/ament_index/resource_index/packages
+symbolically linking /home/md/amr_final_ws/build/robile_planning/package.xml -> /home/md/amr_final_ws/install/robile_planning/share/robile_planning
+creating /home/md/amr_final_ws/install/robile_planning/share/robile_planning/launch
+symbolically linking /home/md/amr_final_ws/build/robile_planning/launch/planning.launch.py -> /home/md/amr_final_ws/install/robile_planning/share/robile_planning/launch
+creating /home/md/amr_final_ws/install/robile_planning/share/robile_planning/config
+symbolically linking /home/md/amr_final_ws/build/robile_planning/config/planning_params.yaml -> /home/md/amr_final_ws/install/robile_planning/share/robile_planning/config

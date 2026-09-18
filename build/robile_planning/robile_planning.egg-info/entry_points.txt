@@ -1,0 +1,4 @@
+[console_scripts]
+global_planner = robile_planning.global_planner:main
+potential_field_planner = robile_planning.potential_field_planner:main
+

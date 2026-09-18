@@ -1,0 +1,1 @@
+/home/md/amr_final_ws/build/robile_description/ament_cmake_environment_hooks/local_setup.bash

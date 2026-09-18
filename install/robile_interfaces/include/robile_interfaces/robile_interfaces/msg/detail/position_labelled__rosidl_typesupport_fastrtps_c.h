@@ -1,0 +1,1 @@
+/home/md/amr_final_ws/build/robile_interfaces/rosidl_typesupport_fastrtps_c/robile_interfaces/msg/detail/position_labelled__rosidl_typesupport_fastrtps_c.h

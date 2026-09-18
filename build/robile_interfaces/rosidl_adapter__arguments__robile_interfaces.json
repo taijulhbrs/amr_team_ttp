@@ -1,0 +1,7 @@
+{
+  "package_name": "robile_interfaces",
+  "non_idl_tuples": [
+    "/home/md/amr_final_ws/src/robile_interfaces:msg/PositionLabelled.msg",
+    "/home/md/amr_final_ws/src/robile_interfaces:msg/PositionLabelledArray.msg"
+  ]
+}

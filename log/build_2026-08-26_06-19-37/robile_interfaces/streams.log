@@ -1,0 +1,35 @@
+[0.029s] Invoking command in '/home/md/amr_final_ws/build/robile_interfaces': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/amr_final_ws/install/robile_planning:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --build /home/md/amr_final_ws/build/robile_interfaces -- -j8 -l8
+[0.073s] [35m[1mConsolidate compiler generated dependencies of target robile_interfaces__rosidl_generator_c[0m
+[0.085s] [ 10%] Built target robile_interfaces__rosidl_generator_c
+[0.089s] [ 12%] Built target robile_interfaces__rs
+[0.090s] [ 15%] Built target robile_interfaces__cpp
+[0.100s] [ 15%] Built target ament_cmake_python_symlink_robile_interfaces
+[0.105s] [35m[1mConsolidate compiler generated dependencies of target robile_interfaces__rosidl_typesupport_c[0m
+[0.105s] [35m[1mConsolidate compiler generated dependencies of target robile_interfaces__rosidl_typesupport_introspection_c[0m
+[0.106s] [35m[1mConsolidate compiler generated dependencies of target robile_interfaces__rosidl_typesupport_fastrtps_c[0m
+[0.108s] [35m[1mConsolidate compiler generated dependencies of target robile_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[0.111s] [35m[1mConsolidate compiler generated dependencies of target robile_interfaces__rosidl_typesupport_introspection_cpp[0m
+[0.120s] [35m[1mConsolidate compiler generated dependencies of target robile_interfaces__rosidl_typesupport_cpp[0m
+[0.128s] [ 25%] Built target robile_interfaces__rosidl_typesupport_c
+[0.132s] [ 35%] Built target robile_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.132s] [ 45%] Built target robile_interfaces__rosidl_typesupport_introspection_c
+[0.134s] [ 55%] Built target robile_interfaces__rosidl_typesupport_introspection_cpp
+[0.141s] [ 65%] Built target robile_interfaces__rosidl_typesupport_fastrtps_c
+[0.143s] [ 75%] Built target robile_interfaces__rosidl_typesupport_cpp
+[0.165s] [ 75%] Built target robile_interfaces
+[0.186s] [ 77%] Built target robile_interfaces__py
+[0.197s] [35m[1mConsolidate compiler generated dependencies of target robile_interfaces__rosidl_generator_py[0m
+[0.211s] [ 85%] Built target robile_interfaces__rosidl_generator_py
+[0.223s] [35m[1mConsolidate compiler generated dependencies of target robile_interfaces__rosidl_typesupport_c__pyext[0m
+[0.223s] [35m[1mConsolidate compiler generated dependencies of target robile_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.227s] [35m[1mConsolidate compiler generated dependencies of target robile_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[0.237s] [ 90%] Built target robile_interfaces__rosidl_typesupport_c__pyext
+[0.240s] [ 95%] Built target robile_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.245s] [100%] Built target robile_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.451s] running egg_info
+[0.452s] writing robile_interfaces.egg-info/PKG-INFO
+[0.452s] writing dependency_links to robile_interfaces.egg-info/dependency_links.txt
+[0.452s] writing top-level names to robile_interfaces.egg-info/top_level.txt
+[0.456s] reading manifest file 'robile_interfaces.egg-info/SOURCES.txt'
+[0.457s] writing manifest file 'robile_interfaces.egg-info/SOURCES.txt'
+[0.487s] [100%] Built target ament_cmake_python_build_robile_interfaces_egg

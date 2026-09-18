@@ -1,0 +1,1 @@
+/home/md/amr_final_ws/build/robile_interfaces/rosidl_generator_rs/robile_interfaces/rust/src/lib.rs

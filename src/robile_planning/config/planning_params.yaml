@@ -1,0 +1,22 @@
+global_planner:
+  ros__parameters:
+    inflation_radius_cells: 3
+    occupied_threshold: 50
+    odom_topic: /odom
+    map_topic: /map
+    goal_topic: /goal_pose
+    path_topic: /global_path
+
+potential_field_planner:
+  ros__parameters:
+    attractive_gain: 1.0
+    repulsive_gain: 1.5
+    obstacle_influence_radius: 0.8
+    waypoint_tolerance: 0.25
+    max_linear_speed: 0.3
+    max_angular_speed: 1.0
+    odom_topic: /odom
+    scan_topic: /scan
+    path_topic: /global_path
+    cmd_vel_topic: /cmd_vel
+    control_frequency: 10.0

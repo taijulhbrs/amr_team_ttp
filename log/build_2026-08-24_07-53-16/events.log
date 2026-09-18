@@ -1,0 +1,940 @@
+[0.000000] (-) TimerEvent: {}
+[0.001763] (-) JobUnselected: {'identifier': 'kelo_tulip'}
+[0.002247] (robile_description) JobQueued: {'identifier': 'robile_description', 'dependencies': OrderedDict()}
+[0.002316] (robile_interfaces) JobQueued: {'identifier': 'robile_interfaces', 'dependencies': OrderedDict()}
+[0.002375] (robile_gazebo) JobQueued: {'identifier': 'robile_gazebo', 'dependencies': OrderedDict([('robile_description', '/home/md/amr_final_ws/install/robile_description')])}
+[0.002437] (robile_navigation) JobQueued: {'identifier': 'robile_navigation', 'dependencies': OrderedDict([('robile_interfaces', '/home/md/amr_final_ws/install/robile_interfaces')])}
+[0.002504] (robile_description) JobStarted: {'identifier': 'robile_description'}
+[0.026920] (robile_interfaces) JobStarted: {'identifier': 'robile_interfaces'}
+[0.055738] (robile_description) JobProgress: {'identifier': 'robile_description', 'progress': 'cmake'}
+[0.058963] (robile_description) Command: {'cmd': ['/usr/bin/cmake', '/home/md/amr_final_ws/src/robile_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_description'], 'cwd': '/home/md/amr_final_ws/build/robile_description', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[0.076166] (robile_interfaces) JobProgress: {'identifier': 'robile_interfaces', 'progress': 'cmake'}
+[0.078238] (robile_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/md/amr_final_ws/src/robile_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_interfaces'], 'cwd': '/home/md/amr_final_ws/build/robile_interfaces', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[0.098568] (-) TimerEvent: {}
+[0.199368] (-) TimerEvent: {}
+[0.299251] (robile_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.302047] (-) TimerEvent: {}
+[0.317748] (robile_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.402231] (-) TimerEvent: {}
+[0.502981] (-) TimerEvent: {}
+[0.600535] (robile_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.603039] (-) TimerEvent: {}
+[0.611989] (robile_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.633030] (robile_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.641266] (robile_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.703557] (-) TimerEvent: {}
+[0.804917] (-) TimerEvent: {}
+[0.906532] (-) TimerEvent: {}
+[0.917490] (robile_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.935219] (robile_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.954171] (robile_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.954955] (robile_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.956317] (robile_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.968935] (robile_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.971693] (robile_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.972368] (robile_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.973148] (robile_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.984323] (robile_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.006887] (-) TimerEvent: {}
+[1.108397] (-) TimerEvent: {}
+[1.209129] (-) TimerEvent: {}
+[1.259308] (robile_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.280964] (robile_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.292438] (robile_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.293126] (robile_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.295528] (robile_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.304798] (robile_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.308398] (robile_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.308896] (robile_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.309046] (-) TimerEvent: {}
+[1.310075] (robile_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.324495] (robile_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.409495] (-) TimerEvent: {}
+[1.510609] (-) TimerEvent: {}
+[1.611447] (-) TimerEvent: {}
+[1.713250] (-) TimerEvent: {}
+[1.813897] (-) TimerEvent: {}
+[1.915175] (-) TimerEvent: {}
+[2.015888] (-) TimerEvent: {}
+[2.116575] (-) TimerEvent: {}
+[2.217242] (-) TimerEvent: {}
+[2.320232] (-) TimerEvent: {}
+[2.406475] (robile_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.422903] (-) TimerEvent: {}
+[2.444316] (robile_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.523354] (-) TimerEvent: {}
+[2.624559] (-) TimerEvent: {}
+[2.726487] (-) TimerEvent: {}
+[2.831970] (-) TimerEvent: {}
+[2.912660] (robile_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.932196] (-) TimerEvent: {}
+[2.959623] (robile_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.032419] (-) TimerEvent: {}
+[3.133285] (-) TimerEvent: {}
+[3.142037] (robile_interfaces) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[3.233415] (-) TimerEvent: {}
+[3.284034] (robile_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.310027] (robile_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.333541] (-) TimerEvent: {}
+[3.350976] (robile_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.409494] (robile_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.434076] (-) TimerEvent: {}
+[3.489737] (robile_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.497701] (robile_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.508723] (robile_description) StdoutLine: {'line': b'-- Generating done\n'}
+[3.512597] (robile_description) StdoutLine: {'line': b'-- Build files have been written to: /home/md/amr_final_ws/build/robile_description\n'}
+[3.528114] (robile_description) CommandEnded: {'returncode': 0}
+[3.532527] (robile_description) JobProgress: {'identifier': 'robile_description', 'progress': 'build'}
+[3.534284] (-) TimerEvent: {}
+[3.537185] (robile_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/md/amr_final_ws/build/robile_description', '--', '-j8', '-l8'], 'cwd': '/home/md/amr_final_ws/build/robile_description', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[3.572262] (robile_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.632752] (robile_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[3.634846] (-) TimerEvent: {}
+[3.692963] (robile_description) CommandEnded: {'returncode': 0}
+[3.697676] (robile_description) JobProgress: {'identifier': 'robile_description', 'progress': 'install'}
+[3.734276] (robile_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/md/amr_final_ws/build/robile_description'], 'cwd': '/home/md/amr_final_ws/build/robile_description', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[3.735842] (-) TimerEvent: {}
+[3.767319] (robile_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.770867] (robile_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.773052] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/kelo_drive/kelo_drive_base.dae\n'}
+[3.806275] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/kelo_drive/kelo_drive_wheel.dae\n'}
+[3.836410] (-) TimerEvent: {}
+[3.841828] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/passive_caster_wheel/pivot.dae\n'}
+[3.879386] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/passive_caster_wheel/wheel.dae\n'}
+[3.917263] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/general_brick_housing.dae\n'}
+[3.936413] (-) TimerEvent: {}
+[3.952128] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/lid.dae\n'}
+[3.989027] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/lid_cover_blue.dae\n'}
+[4.023748] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/lid_cover_green.dae\n'}
+[4.036990] (-) TimerEvent: {}
+[4.060846] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/lid_cover_red.dae\n'}
+[4.100897] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/lid_cover_yellow.dae\n'}
+[4.127171] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/robile_brick_housing/wheeled_brick_housing.dae\n'}
+[4.137189] (-) TimerEvent: {}
+[4.153111] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/sensors/hokuyo.dae\n'}
+[4.180984] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/sensors/hokuyo_convex.dae\n'}
+[4.222122] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//meshes/sensors/sick-lms1xx.dae\n'}
+[4.237860] (-) TimerEvent: {}
+[4.264375] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//robots/2_wheel_config.urdf.xacro\n'}
+[4.306280] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//robots/4_wheel_config.urdf.xacro\n'}
+[4.337886] (-) TimerEvent: {}
+[4.353476] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//robots/6_wheel_config.urdf.xacro\n'}
+[4.401136] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//robots/robile3_config.urdf.xacro\n'}
+[4.438084] (-) TimerEvent: {}
+[4.453199] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/brick_housing.urdf.xacro\n'}
+[4.510025] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/common.xacro\n'}
+[4.539129] (-) TimerEvent: {}
+[4.562787] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/kelo_drive.urdf.xacro\n'}
+[4.616909] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/kelo_drive_wheel.urdf.xacro\n'}
+[4.639390] (-) TimerEvent: {}
+[4.662254] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/materials.urdf.xacro\n'}
+[4.703661] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/base_macros/passive_caster_wheel.urdf.xacro\n'}
+[4.737286] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_active_wheel_brick.urdf.xacro\n'}
+[4.739936] (-) TimerEvent: {}
+[4.776683] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_cpu_brick.urdf.xacro\n'}
+[4.812735] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_empty_brick.urdf.xacro\n'}
+[4.840074] (-) TimerEvent: {}
+[4.849262] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_master_battery_brick.urdf.xacro\n'}
+[4.884958] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_passive_wheel_brick.urdf.xacro\n'}
+[4.928106] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/robile_bricks/robile_slave_battery_brick.urdf.xacro\n'}
+[4.940400] (-) TimerEvent: {}
+[4.974674] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/camera_front.gazebo.xacro\n'}
+[5.008018] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/camera_front.urdf.xacro\n'}
+[5.040487] (-) TimerEvent: {}
+[5.046397] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/hokuyo_urg04_laser.gazebo.xacro\n'}
+[5.089895] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/hokuyo_urg04_laser.urdf.xacro\n'}
+[5.125243] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/sick_lms1xx.urdf.xacro\n'}
+[5.140610] (-) TimerEvent: {}
+[5.154823] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//urdf/sensors/sick_lms1xx_mount.urdf.xacro\n'}
+[5.181201] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//gazebo/gazebo_robile.xacro\n'}
+[5.205555] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//gazebo/gazebo_robile_laser_scanner.xacro\n'}
+[5.231029] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//gazebo/gazebo_robile_laserscanner_camera.xacro\n'}
+[5.240900] (-) TimerEvent: {}
+[5.257367] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//gazebo/gazebo_ros_control.xacro\n'}
+[5.288564] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description//gazebo/gazebo_ros_planar_move.xacro\n'}
+[5.323687] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/ament_index/resource_index/package_run_dependencies/robile_description\n'}
+[5.341347] (-) TimerEvent: {}
+[5.366980] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/ament_index/resource_index/parent_prefix_path/robile_description\n'}
+[5.404769] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/environment/ament_prefix_path.sh\n'}
+[5.442078] (-) TimerEvent: {}
+[5.446222] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/environment/ament_prefix_path.dsv\n'}
+[5.482981] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/environment/path.sh\n'}
+[5.520470] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/environment/path.dsv\n'}
+[5.542076] (-) TimerEvent: {}
+[5.551502] (robile_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[5.552721] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/local_setup.bash\n'}
+[5.586740] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/local_setup.sh\n'}
+[5.620808] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/local_setup.zsh\n'}
+[5.642990] (-) TimerEvent: {}
+[5.654542] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/local_setup.dsv\n'}
+[5.686456] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/package.dsv\n'}
+[5.719236] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/ament_index/resource_index/packages/robile_description\n'}
+[5.743000] (-) TimerEvent: {}
+[5.757418] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/cmake/robile_descriptionConfig.cmake\n'}
+[5.798475] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/cmake/robile_descriptionConfig-version.cmake\n'}
+[5.834017] (robile_description) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_description/share/robile_description/package.xml\n'}
+[5.843535] (-) TimerEvent: {}
+[5.879829] (robile_description) CommandEnded: {'returncode': 0}
+[5.944511] (-) TimerEvent: {}
+[5.959560] (robile_description) JobEnded: {'identifier': 'robile_description', 'rc': 0}
+[5.961381] (robile_gazebo) JobStarted: {'identifier': 'robile_gazebo'}
+[5.986489] (robile_gazebo) JobProgress: {'identifier': 'robile_gazebo', 'progress': 'cmake'}
+[5.990651] (robile_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/md/amr_final_ws/src/robile_gazebo', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_gazebo'], 'cwd': '/home/md/amr_final_ws/build/robile_gazebo', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_description:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[6.044725] (-) TimerEvent: {}
+[6.145602] (-) TimerEvent: {}
+[6.198004] (robile_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[6.245695] (-) TimerEvent: {}
+[6.346188] (-) TimerEvent: {}
+[6.399759] (robile_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[6.425502] (robile_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.446362] (-) TimerEvent: {}
+[6.547470] (-) TimerEvent: {}
+[6.649155] (-) TimerEvent: {}
+[6.701922] (robile_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.735692] (robile_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.736407] (robile_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.738966] (robile_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.749281] (-) TimerEvent: {}
+[6.751941] (robile_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.850000] (-) TimerEvent: {}
+[6.951820] (-) TimerEvent: {}
+[7.052830] (-) TimerEvent: {}
+[7.077763] (robile_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.133705] (robile_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.135818] (robile_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.136799] (robile_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.152720] (-) TimerEvent: {}
+[7.153325] (robile_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[7.252842] (-) TimerEvent: {}
+[7.353320] (-) TimerEvent: {}
+[7.456961] (-) TimerEvent: {}
+[7.558260] (-) TimerEvent: {}
+[7.659298] (-) TimerEvent: {}
+[7.760793] (-) TimerEvent: {}
+[7.803118] (robile_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.861180] (-) TimerEvent: {}
+[7.963939] (-) TimerEvent: {}
+[8.064703] (-) TimerEvent: {}
+[8.105741] (robile_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[8.164846] (-) TimerEvent: {}
+[8.265336] (-) TimerEvent: {}
+[8.366141] (-) TimerEvent: {}
+[8.450950] (robile_gazebo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[8.466728] (-) TimerEvent: {}
+[8.568168] (-) TimerEvent: {}
+[8.620116] (robile_gazebo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[8.662507] (robile_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.668442] (-) TimerEvent: {}
+[8.769604] (-) TimerEvent: {}
+[8.782347] (robile_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[8.789604] (robile_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[8.831933] (robile_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[8.861854] (robile_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[8.869854] (-) TimerEvent: {}
+[8.910911] (robile_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[8.942145] (robile_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[8.944149] (robile_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.944557] (robile_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[8.944818] (robile_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[8.970227] (-) TimerEvent: {}
+[8.974338] (robile_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.063254] (robile_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.069932] (robile_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[9.070230] (-) TimerEvent: {}
+[9.170826] (-) TimerEvent: {}
+[9.260624] (robile_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[9.270951] (-) TimerEvent: {}
+[9.276046] (robile_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[9.371168] (-) TimerEvent: {}
+[9.471729] (-) TimerEvent: {}
+[9.572372] (-) TimerEvent: {}
+[9.635567] (robile_gazebo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[9.672469] (-) TimerEvent: {}
+[9.773010] (robile_gazebo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[9.773699] (-) TimerEvent: {}
+[9.820116] (robile_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.874200] (-) TimerEvent: {}
+[9.958695] (robile_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.974263] (-) TimerEvent: {}
+[9.980525] (robile_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[9.997269] (robile_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[10.026175] (robile_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/md/amr_final_ws/build/robile_interfaces\n'}
+[10.069876] (robile_interfaces) CommandEnded: {'returncode': 0}
+[10.073000] (robile_interfaces) JobProgress: {'identifier': 'robile_interfaces', 'progress': 'build'}
+[10.081277] (-) TimerEvent: {}
+[10.082394] (robile_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/md/amr_final_ws/build/robile_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/md/amr_final_ws/build/robile_interfaces', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[10.181440] (-) TimerEvent: {}
+[10.219403] (robile_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[10.267734] (robile_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[10.279656] (robile_interfaces) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[10.283299] (-) TimerEvent: {}
+[10.292267] (robile_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[10.297641] (robile_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[10.324023] (robile_interfaces) StdoutLine: {'line': b'[  7%] Built target ament_cmake_python_symlink_robile_interfaces\n'}
+[10.383795] (-) TimerEvent: {}
+[10.486195] (-) TimerEvent: {}
+[10.587011] (-) TimerEvent: {}
+[10.687946] (-) TimerEvent: {}
+[10.788504] (-) TimerEvent: {}
+[10.877841] (robile_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[10.886504] (robile_gazebo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.888829] (-) TimerEvent: {}
+[10.993934] (-) TimerEvent: {}
+[11.099700] (-) TimerEvent: {}
+[11.205726] (-) TimerEvent: {}
+[11.269888] (robile_gazebo) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[11.273285] (robile_gazebo) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (PkgConfig)\n'}
+[11.274386] (robile_gazebo) StderrLine: {'line': b'  does not match the name of the calling package (gazebo).  This can lead to\n'}
+[11.274593] (robile_gazebo) StderrLine: {'line': b'  problems in calling code that expects `find_package` result variables\n'}
+[11.274822] (robile_gazebo) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[11.275277] (robile_gazebo) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[11.275542] (robile_gazebo) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)\n'}
+[11.275763] (robile_gazebo) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)\n'}
+[11.276047] (robile_gazebo) StderrLine: {'line': b'  CMakeLists.txt:16 (find_package)\n'}
+[11.276247] (robile_gazebo) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[11.276425] (robile_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[11.276594] (robile_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[11.288152] (robile_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[11.305955] (-) TimerEvent: {}
+[11.390217] (robile_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[11.406163] (-) TimerEvent: {}
+[11.507887] (-) TimerEvent: {}
+[11.614581] (-) TimerEvent: {}
+[11.715745] (-) TimerEvent: {}
+[11.817735] (-) TimerEvent: {}
+[11.918568] (-) TimerEvent: {}
+[12.021733] (-) TimerEvent: {}
+[12.125196] (robile_interfaces) StdoutLine: {'line': b'[  7%] Built target robile_interfaces__rs\n'}
+[12.125656] (-) TimerEvent: {}
+[12.229427] (-) TimerEvent: {}
+[12.271958] (robile_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[12.331626] (-) TimerEvent: {}
+[12.400235] (robile_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/robile_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robile_interfaces/msg/detail/position_labelled__functions.c.o\x1b[0m\n'}
+[12.401740] (robile_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/robile_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robile_interfaces/msg/detail/position_labelled_array__functions.c.o\x1b[0m\n'}
+[12.432008] (-) TimerEvent: {}
+[12.441804] (robile_interfaces) StdoutLine: {'line': b'[ 12%] Built target robile_interfaces__cpp\n'}
+[12.527466] (robile_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.534815] (-) TimerEvent: {}
+[12.538181] (robile_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.552113] (robile_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.635139] (-) TimerEvent: {}
+[12.692727] (robile_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[12.739088] (-) TimerEvent: {}
+[12.793063] (robile_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[12.834243] (robile_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library librobile_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[12.840725] (-) TimerEvent: {}
+[12.945167] (-) TimerEvent: {}
+[12.992510] (robile_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[13.046762] (-) TimerEvent: {}
+[13.059228] (robile_interfaces) StdoutLine: {'line': b'[ 22%] Built target robile_interfaces__rosidl_generator_c\n'}
+[13.071332] (robile_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[13.071757] (robile_interfaces) StdoutLine: {'line': b'creating robile_interfaces.egg-info\n'}
+[13.072409] (robile_interfaces) StdoutLine: {'line': b'writing robile_interfaces.egg-info/PKG-INFO\n'}
+[13.072944] (robile_interfaces) StdoutLine: {'line': b'writing dependency_links to robile_interfaces.egg-info/dependency_links.txt\n'}
+[13.073455] (robile_interfaces) StdoutLine: {'line': b'writing top-level names to robile_interfaces.egg-info/top_level.txt\n'}
+[13.079486] (robile_interfaces) StdoutLine: {'line': b"writing manifest file 'robile_interfaces.egg-info/SOURCES.txt'\n"}
+[13.081718] (robile_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[13.086059] (robile_interfaces) StdoutLine: {'line': b"reading manifest file 'robile_interfaces.egg-info/SOURCES.txt'\n"}
+[13.087477] (robile_interfaces) StdoutLine: {'line': b"writing manifest file 'robile_interfaces.egg-info/SOURCES.txt'\n"}
+[13.123028] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[13.124766] (robile_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[13.135560] (robile_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[13.142954] (robile_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[13.147803] (-) TimerEvent: {}
+[13.155003] (robile_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[13.158783] (robile_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[13.194530] (robile_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[13.210829] (robile_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[13.247957] (-) TimerEvent: {}
+[13.278690] (robile_interfaces) StdoutLine: {'line': b'[ 30%] Built target ament_cmake_python_build_robile_interfaces_egg\n'}
+[13.334749] (robile_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[13.348742] (-) TimerEvent: {}
+[13.451865] (-) TimerEvent: {}
+[13.554720] (-) TimerEvent: {}
+[13.657581] (-) TimerEvent: {}
+[13.716693] (robile_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[13.757850] (-) TimerEvent: {}
+[13.766886] (robile_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[13.817894] (robile_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[13.859882] (-) TimerEvent: {}
+[13.860556] (robile_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[13.863455] (robile_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[13.926138] (robile_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[13.926533] (robile_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[13.960318] (-) TimerEvent: {}
+[13.969640] (robile_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[13.971601] (robile_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[14.025113] (robile_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[14.030039] (robile_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[14.060564] (-) TimerEvent: {}
+[14.112881] (robile_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[14.119820] (robile_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[14.158190] (robile_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[14.160764] (-) TimerEvent: {}
+[14.265165] (-) TimerEvent: {}
+[14.370259] (-) TimerEvent: {}
+[14.475547] (-) TimerEvent: {}
+[14.530253] (robile_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robile_interfaces/msg/position_labelled__type_support.cpp.o\x1b[0m\n'}
+[14.553429] (robile_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robile_interfaces/msg/position_labelled_array__type_support.cpp.o\x1b[0m\n'}
+[14.575653] (-) TimerEvent: {}
+[14.680159] (-) TimerEvent: {}
+[14.780941] (-) TimerEvent: {}
+[14.882141] (-) TimerEvent: {}
+[14.984153] (-) TimerEvent: {}
+[15.011417] (robile_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/robile_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robile_interfaces/msg/detail/position_labelled__type_support.c.o\x1b[0m\n'}
+[15.024861] (robile_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robile_interfaces/msg/detail/position_labelled__type_support.cpp.o\x1b[0m\n'}
+[15.048682] (robile_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robile_interfaces/msg/detail/position_labelled_array__type_support.cpp.o\x1b[0m\n'}
+[15.086737] (-) TimerEvent: {}
+[15.125124] (robile_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robile_interfaces/msg/detail/dds_fastrtps/position_labelled__type_support.cpp.o\x1b[0m\n'}
+[15.187718] (-) TimerEvent: {}
+[15.221585] (robile_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robile_interfaces/msg/position_labelled__type_support.cpp.o\x1b[0m\n'}
+[15.233016] (robile_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/robile_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robile_interfaces/msg/detail/position_labelled_array__type_support.c.o\x1b[0m\n'}
+[15.288821] (-) TimerEvent: {}
+[15.345186] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[15.358067] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[15.359928] (robile_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[15.392110] (-) TimerEvent: {}
+[15.438263] (robile_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robile_interfaces/msg/position_labelled_array__type_support.cpp.o\x1b[0m\n'}
+[15.455010] (robile_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[15.492776] (-) TimerEvent: {}
+[15.509302] (robile_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[15.525819] (robile_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking C shared library librobile_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[15.534197] (robile_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[15.596005] (-) TimerEvent: {}
+[15.651895] (robile_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library librobile_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[15.671940] (robile_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[15.697083] (-) TimerEvent: {}
+[15.774427] (robile_interfaces) StdoutLine: {'line': b'[ 57%] Built target robile_interfaces__rosidl_typesupport_introspection_c\n'}
+[15.797453] (-) TimerEvent: {}
+[15.816236] (robile_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robile_interfaces/msg/detail/position_labelled__type_support_c.cpp.o\x1b[0m\n'}
+[15.837981] (robile_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robile_interfaces/msg/detail/dds_fastrtps/position_labelled_array__type_support.cpp.o\x1b[0m\n'}
+[15.901760] (-) TimerEvent: {}
+[16.005489] (-) TimerEvent: {}
+[16.105748] (robile_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[16.106212] (-) TimerEvent: {}
+[16.134475] (robile_interfaces) StdoutLine: {'line': b'[ 62%] Built target robile_interfaces__rosidl_typesupport_c\n'}
+[16.165881] (robile_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[16.203541] (robile_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robile_interfaces/msg/detail/position_labelled_array__type_support_c.cpp.o\x1b[0m\n'}
+[16.206430] (-) TimerEvent: {}
+[16.299671] (robile_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[16.306561] (-) TimerEvent: {}
+[16.408230] (-) TimerEvent: {}
+[16.509229] (-) TimerEvent: {}
+[16.543733] (robile_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[16.553831] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[16.558111] (robile_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[16.612066] (-) TimerEvent: {}
+[16.633849] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[16.657346] (robile_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[16.712373] (-) TimerEvent: {}
+[16.729120] (robile_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[16.812542] (-) TimerEvent: {}
+[16.922784] (-) TimerEvent: {}
+[16.986124] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[17.007349] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[17.012283] (robile_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[17.016809] (robile_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[17.023089] (-) TimerEvent: {}
+[17.025128] (robile_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[17.031137] (robile_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[17.091238] (robile_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library librobile_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[17.114167] (robile_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[17.115473] (robile_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[17.123237] (-) TimerEvent: {}
+[17.128879] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[17.134754] (robile_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[17.135190] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[17.153807] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[17.155366] (robile_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[17.224153] (-) TimerEvent: {}
+[17.329434] (-) TimerEvent: {}
+[17.431222] (-) TimerEvent: {}
+[17.533762] (robile_interfaces) StdoutLine: {'line': b'[ 67%] Built target robile_interfaces__rosidl_typesupport_cpp\n'}
+[17.534216] (-) TimerEvent: {}
+[17.635386] (-) TimerEvent: {}
+[17.747575] (-) TimerEvent: {}
+[17.856348] (-) TimerEvent: {}
+[17.957945] (-) TimerEvent: {}
+[17.983684] (robile_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[18.058773] (-) TimerEvent: {}
+[18.081363] (robile_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[18.160978] (-) TimerEvent: {}
+[18.200716] (robile_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[18.261518] (-) TimerEvent: {}
+[18.367615] (-) TimerEvent: {}
+[18.446996] (robile_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library librobile_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[18.467838] (-) TimerEvent: {}
+[18.525019] (robile_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[18.568159] (-) TimerEvent: {}
+[18.577352] (robile_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[18.668739] (-) TimerEvent: {}
+[18.675549] (robile_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[18.729447] (robile_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library librobile_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[18.769078] (-) TimerEvent: {}
+[18.871103] (-) TimerEvent: {}
+[18.969097] (robile_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[18.971364] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[18.973334] (-) TimerEvent: {}
+[18.976526] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[18.980995] (robile_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[19.023989] (robile_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)\n'}
+[19.043050] (robile_gazebo) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[19.047942] (robile_interfaces) StdoutLine: {'line': b'[ 72%] Built target robile_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[19.078031] (-) TimerEvent: {}
+[19.180357] (-) TimerEvent: {}
+[19.200563] (robile_gazebo) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[19.215239] (robile_interfaces) StdoutLine: {'line': b'[ 72%] Built target robile_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[19.280920] (-) TimerEvent: {}
+[19.360331] (robile_gazebo) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[19.373432] (robile_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library librobile_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[19.380909] (-) TimerEvent: {}
+[19.481943] (-) TimerEvent: {}
+[19.513247] (robile_gazebo) StdoutLine: {'line': b'-- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)\n'}
+[19.582263] (-) TimerEvent: {}
+[19.683562] (-) TimerEvent: {}
+[19.782796] (robile_interfaces) StdoutLine: {'line': b'[ 75%] Built target robile_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[19.783577] (-) TimerEvent: {}
+[19.866270] (robile_interfaces) StdoutLine: {'line': b'[ 75%] Built target robile_interfaces\n'}
+[19.885481] (-) TimerEvent: {}
+[19.950761] (robile_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[19.984258] (-) TimerEvent: {}
+[20.085009] (-) TimerEvent: {}
+[20.127683] (robile_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[20.147709] (robile_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[20.161937] (robile_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/md/amr_final_ws/build/robile_gazebo\n'}
+[20.185313] (-) TimerEvent: {}
+[20.221760] (robile_gazebo) CommandEnded: {'returncode': 0}
+[20.222797] (robile_gazebo) JobProgress: {'identifier': 'robile_gazebo', 'progress': 'build'}
+[20.224087] (robile_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/md/amr_final_ws/build/robile_gazebo', '--', '-j8', '-l8'], 'cwd': '/home/md/amr_final_ws/build/robile_gazebo', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_description:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[20.285386] (-) TimerEvent: {}
+[20.388079] (-) TimerEvent: {}
+[20.414337] (robile_gazebo) CommandEnded: {'returncode': 0}
+[20.415846] (robile_gazebo) JobProgress: {'identifier': 'robile_gazebo', 'progress': 'install'}
+[20.416973] (robile_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/md/amr_final_ws/build/robile_gazebo'], 'cwd': '/home/md/amr_final_ws/build/robile_gazebo', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_description:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[20.457776] (robile_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.460136] (robile_gazebo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[20.461821] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//config/doxygen/Doxyfile.in\n'}
+[20.488175] (-) TimerEvent: {}
+[20.495047] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//config/rviz/robile.rviz\n'}
+[20.526136] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//config/rviz/robile_foxy_nav.rviz\n'}
+[20.560624] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//config/rviz/robile_rolling.rviz\n'}
+[20.588379] (-) TimerEvent: {}
+[20.595859] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//launch/gazebo_4_wheel.launch.py\n'}
+[20.628530] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//worlds/closed_walls.world\n'}
+[20.662900] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo//worlds/potential_field_gazebo.world\n'}
+[20.688617] (-) TimerEvent: {}
+[20.699276] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/ament_index/resource_index/package_run_dependencies/robile_gazebo\n'}
+[20.731327] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/ament_index/resource_index/parent_prefix_path/robile_gazebo\n'}
+[20.765830] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/environment/ament_prefix_path.sh\n'}
+[20.788731] (-) TimerEvent: {}
+[20.800559] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/environment/ament_prefix_path.dsv\n'}
+[20.841274] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/environment/path.sh\n'}
+[20.875857] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/environment/path.dsv\n'}
+[20.889145] (-) TimerEvent: {}
+[20.903601] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/local_setup.bash\n'}
+[20.934037] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/local_setup.sh\n'}
+[20.969391] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/local_setup.zsh\n'}
+[20.989401] (-) TimerEvent: {}
+[20.999928] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/local_setup.dsv\n'}
+[21.028120] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/package.dsv\n'}
+[21.062697] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/ament_index/resource_index/packages/robile_gazebo\n'}
+[21.089875] (-) TimerEvent: {}
+[21.093815] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[21.123798] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/cmake/robile_gazeboConfig.cmake\n'}
+[21.153169] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/cmake/robile_gazeboConfig-version.cmake\n'}
+[21.189975] (-) TimerEvent: {}
+[21.192364] (robile_gazebo) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_gazebo/share/robile_gazebo/package.xml\n'}
+[21.229845] (robile_gazebo) CommandEnded: {'returncode': 0}
+[21.279715] (robile_gazebo) JobEnded: {'identifier': 'robile_gazebo', 'rc': 0}
+[21.290194] (-) TimerEvent: {}
+[21.390816] (-) TimerEvent: {}
+[21.491135] (-) TimerEvent: {}
+[21.591498] (-) TimerEvent: {}
+[21.692084] (-) TimerEvent: {}
+[21.705495] (robile_interfaces) StdoutLine: {'line': b'[ 77%] Built target robile_interfaces__py\n'}
+[21.779154] (robile_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/robile_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robile_interfaces/msg/_position_labelled_array_s.c.o\x1b[0m\n'}
+[21.783070] (robile_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/robile_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robile_interfaces/msg/_position_labelled_s.c.o\x1b[0m\n'}
+[21.794760] (-) TimerEvent: {}
+[21.895295] (-) TimerEvent: {}
+[21.996979] (-) TimerEvent: {}
+[22.097869] (-) TimerEvent: {}
+[22.143493] (robile_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robile_interfaces/librobile_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[22.197928] (-) TimerEvent: {}
+[22.296618] (robile_interfaces) StdoutLine: {'line': b'[ 85%] Built target robile_interfaces__rosidl_generator_py\n'}
+[22.298066] (-) TimerEvent: {}
+[22.365184] (robile_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/robile_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[22.367212] (robile_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/robile_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[22.369333] (robile_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/robile_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[22.398331] (-) TimerEvent: {}
+[22.499771] (-) TimerEvent: {}
+[22.603282] (-) TimerEvent: {}
+[22.704834] (-) TimerEvent: {}
+[22.806034] (-) TimerEvent: {}
+[22.822764] (robile_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robile_interfaces/robile_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.832290] (robile_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robile_interfaces/robile_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.839981] (robile_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robile_interfaces/robile_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.907317] (-) TimerEvent: {}
+[23.011811] (-) TimerEvent: {}
+[23.118310] (-) TimerEvent: {}
+[23.137165] (robile_interfaces) StdoutLine: {'line': b'[100%] Built target robile_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[23.138144] (robile_interfaces) StdoutLine: {'line': b'[100%] Built target robile_interfaces__rosidl_typesupport_c__pyext\n'}
+[23.166073] (robile_interfaces) StdoutLine: {'line': b'[100%] Built target robile_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[23.218775] (robile_interfaces) CommandEnded: {'returncode': 0}
+[23.221036] (-) TimerEvent: {}
+[23.222758] (robile_interfaces) JobProgress: {'identifier': 'robile_interfaces', 'progress': 'install'}
+[23.223537] (robile_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/md/amr_final_ws/build/robile_interfaces'], 'cwd': '/home/md/amr_final_ws/build/robile_interfaces', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[23.255618] (robile_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.257192] (robile_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[23.257651] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/ament_index/resource_index/rosidl_interfaces/robile_interfaces\n'}
+[23.286905] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__functions.h\n'}
+[23.317008] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__struct.h\n'}
+[23.321461] (-) TimerEvent: {}
+[23.345307] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__type_support.h\n'}
+[23.377286] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__functions.h\n'}
+[23.414836] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__struct.h\n'}
+[23.421762] (-) TimerEvent: {}
+[23.445462] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__type_support.h\n'}
+[23.477711] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/position_labelled.h\n'}
+[23.510212] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/position_labelled_array.h\n'}
+[23.522245] (-) TimerEvent: {}
+[23.543459] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[23.580407] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/library_path.sh\n'}
+[23.617268] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/library_path.dsv\n'}
+[23.622428] (-) TimerEvent: {}
+[23.649560] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__rosidl_typesupport_fastrtps_c.h\n'}
+[23.679604] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__rosidl_typesupport_fastrtps_c.h\n'}
+[23.712307] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[23.722561] (-) TimerEvent: {}
+[23.745309] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__builder.hpp\n'}
+[23.778351] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__struct.hpp\n'}
+[23.815383] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__traits.hpp\n'}
+[23.822994] (-) TimerEvent: {}
+[23.846754] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__type_support.hpp\n'}
+[23.876781] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__builder.hpp\n'}
+[23.907901] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__struct.hpp\n'}
+[23.923288] (-) TimerEvent: {}
+[23.934163] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__traits.hpp\n'}
+[23.964856] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__type_support.hpp\n'}
+[23.993584] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/position_labelled.hpp\n'}
+[24.023308] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/position_labelled_array.hpp\n'}
+[24.023546] (-) TimerEvent: {}
+[24.054735] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[24.086982] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.114253] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.123832] (-) TimerEvent: {}
+[24.140329] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[24.166964] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__rosidl_typesupport_introspection_c.h\n'}
+[24.190692] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__rosidl_typesupport_introspection_c.h\n'}
+[24.213212] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[24.223947] (-) TimerEvent: {}
+[24.237046] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.262842] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.289258] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/pythonpath.sh\n'}
+[24.315977] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/pythonpath.dsv\n'}
+[24.324082] (-) TimerEvent: {}
+[24.345925] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[24.382958] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[24.414556] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[24.424204] (-) TimerEvent: {}
+[24.444612] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[24.472379] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/__init__.py\n'}
+[24.502214] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[24.524386] (-) TimerEvent: {}
+[24.528267] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[24.560896] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[24.594224] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/librobile_interfaces__rosidl_generator_py.so\n'}
+[24.624603] (-) TimerEvent: {}
+[24.626596] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/__init__.py\n'}
+[24.670848] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled.py\n'}
+[24.711039] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled_array.py\n'}
+[24.724696] (-) TimerEvent: {}
+[24.746102] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled_array_s.c\n'}
+[24.786795] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled_s.c\n'}
+[24.824032] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.824800] (-) TimerEvent: {}
+[24.864940] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.904764] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.925301] (-) TimerEvent: {}
+[24.943924] (robile_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.944621] (robile_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.945362] (robile_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.945936] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/ament_index/resource_index/rust_packages/robile_interfaces\n'}
+[24.988858] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/rust/Cargo.toml\n'}
+[25.025456] (-) TimerEvent: {}
+[25.030358] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/rust/build.rs\n'}
+[25.067395] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/rust/src/lib.rs\n'}
+[25.095648] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/rust/src/msg.rs\n'}
+[25.119011] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/rust/src/msg/rmw.rs\n'}
+[25.125642] (-) TimerEvent: {}
+[25.140420] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/msg/PositionLabelled.idl\n'}
+[25.165824] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/msg/PositionLabelledArray.idl\n'}
+[25.197037] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/msg/PositionLabelled.msg\n'}
+[25.221412] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/msg/PositionLabelledArray.msg\n'}
+[25.225992] (-) TimerEvent: {}
+[25.245120] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/ament_index/resource_index/package_run_dependencies/robile_interfaces\n'}
+[25.269149] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/ament_index/resource_index/parent_prefix_path/robile_interfaces\n'}
+[25.292679] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/ament_prefix_path.sh\n'}
+[25.313246] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/ament_prefix_path.dsv\n'}
+[25.326118] (-) TimerEvent: {}
+[25.340614] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/path.sh\n'}
+[25.374414] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/path.dsv\n'}
+[25.408413] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/local_setup.bash\n'}
+[25.426682] (-) TimerEvent: {}
+[25.440392] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/local_setup.sh\n'}
+[25.471258] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/local_setup.zsh\n'}
+[25.495213] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/local_setup.dsv\n'}
+[25.521625] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/package.dsv\n'}
+[25.526675] (-) TimerEvent: {}
+[25.554275] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/ament_index/resource_index/packages/robile_interfaces\n'}
+[25.590251] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[25.619905] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[25.626975] (-) TimerEvent: {}
+[25.642500] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[25.680206] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[25.709806] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[25.727060] (-) TimerEvent: {}
+[25.736457] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[25.767507] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[25.801905] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfacesConfig.cmake\n'}
+[25.827591] (-) TimerEvent: {}
+[25.839158] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfacesConfig-version.cmake\n'}
+[25.872718] (robile_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/package.xml\n'}
+[25.902654] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_generator_c.so\n'}
+[25.903515] (robile_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_generator_c.so" to ""\n'}
+[25.903844] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[25.904550] (robile_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[25.904885] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[25.906960] (robile_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[25.907662] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[25.908300] (robile_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[25.908526] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_c.so\n'}
+[25.909094] (robile_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[25.909395] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[25.910083] (robile_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[25.910440] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_cpp.so\n'}
+[25.910990] (robile_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[25.927580] (-) TimerEvent: {}
+[26.028152] (-) TimerEvent: {}
+[26.077288] (robile_interfaces) StdoutLine: {'line': b"Listing '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces'...\n"}
+[26.077900] (robile_interfaces) StdoutLine: {'line': b"Compiling '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/__init__.py'...\n"}
+[26.078243] (robile_interfaces) StdoutLine: {'line': b"Listing '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg'...\n"}
+[26.078467] (robile_interfaces) StdoutLine: {'line': b"Compiling '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/__init__.py'...\n"}
+[26.078594] (robile_interfaces) StdoutLine: {'line': b"Compiling '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled.py'...\n"}
+[26.078763] (robile_interfaces) StdoutLine: {'line': b"Compiling '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled_array.py'...\n"}
+[26.097976] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_generator_py.so\n'}
+[26.098593] (robile_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_generator_py.so" to ""\n'}
+[26.098979] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_generator_cExport.cmake\n'}
+[26.099975] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[26.101851] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[26.102655] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[26.103185] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_generator_cppExport.cmake\n'}
+[26.103602] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[26.104073] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[26.104416] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[26.104767] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[26.105091] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[26.105415] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[26.105989] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[26.106415] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[26.107025] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[26.107421] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[26.108425] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_generator_pyExport.cmake\n'}
+[26.109549] (robile_interfaces) StdoutLine: {'line': b'-- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[26.116977] (robile_interfaces) CommandEnded: {'returncode': 0}
+[26.128610] (-) TimerEvent: {}
+[26.191998] (robile_interfaces) JobEnded: {'identifier': 'robile_interfaces', 'rc': 0}
+[26.195991] (robile_navigation) JobStarted: {'identifier': 'robile_navigation'}
+[26.228754] (-) TimerEvent: {}
+[26.232254] (robile_navigation) JobProgress: {'identifier': 'robile_navigation', 'progress': 'cmake'}
+[26.235122] (robile_navigation) Command: {'cmd': ['/usr/bin/cmake', '/home/md/amr_final_ws/src/robile_navigation', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_navigation'], 'cwd': '/home/md/amr_final_ws/build/robile_navigation', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_navigation'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[26.328849] (-) TimerEvent: {}
+[26.429247] (-) TimerEvent: {}
+[26.431399] (robile_navigation) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[26.529733] (-) TimerEvent: {}
+[26.631840] (-) TimerEvent: {}
+[26.641880] (robile_navigation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[26.671315] (robile_navigation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[26.731987] (-) TimerEvent: {}
+[26.833031] (-) TimerEvent: {}
+[26.934092] (-) TimerEvent: {}
+[26.938016] (robile_navigation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[26.969071] (robile_navigation) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[26.969742] (robile_navigation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[26.974026] (robile_navigation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[26.984649] (robile_navigation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[27.034345] (-) TimerEvent: {}
+[27.135970] (-) TimerEvent: {}
+[27.236370] (-) TimerEvent: {}
+[27.314191] (robile_navigation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[27.336519] (-) TimerEvent: {}
+[27.345609] (robile_navigation) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[27.346568] (robile_navigation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[27.350129] (robile_navigation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[27.360336] (robile_navigation) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[27.436791] (-) TimerEvent: {}
+[27.537388] (-) TimerEvent: {}
+[27.637808] (-) TimerEvent: {}
+[27.738174] (-) TimerEvent: {}
+[27.838951] (-) TimerEvent: {}
+[27.940108] (-) TimerEvent: {}
+[28.042388] (-) TimerEvent: {}
+[28.110763] (robile_navigation) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[28.142543] (-) TimerEvent: {}
+[28.243185] (-) TimerEvent: {}
+[28.344741] (-) TimerEvent: {}
+[28.432391] (robile_navigation) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[28.444859] (-) TimerEvent: {}
+[28.545504] (-) TimerEvent: {}
+[28.572908] (robile_navigation) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[28.645665] (-) TimerEvent: {}
+[28.746282] (-) TimerEvent: {}
+[28.760117] (robile_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[28.784809] (robile_navigation) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[28.820399] (robile_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[28.846450] (-) TimerEvent: {}
+[28.867307] (robile_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[28.933959] (robile_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[28.946943] (-) TimerEvent: {}
+[29.048000] (-) TimerEvent: {}
+[29.125877] (robile_navigation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[29.139714] (robile_navigation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[29.148285] (-) TimerEvent: {}
+[29.248969] (-) TimerEvent: {}
+[29.349366] (-) TimerEvent: {}
+[29.450093] (-) TimerEvent: {}
+[29.462880] (robile_navigation) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[29.550374] (-) TimerEvent: {}
+[29.569263] (robile_navigation) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[29.650473] (-) TimerEvent: {}
+[29.724205] (robile_navigation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[29.750674] (-) TimerEvent: {}
+[29.767548] (robile_navigation) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[29.851078] (-) TimerEvent: {}
+[29.951566] (-) TimerEvent: {}
+[30.052508] (-) TimerEvent: {}
+[30.099165] (robile_navigation) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[30.099939] (robile_navigation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[30.152647] (-) TimerEvent: {}
+[30.253845] (-) TimerEvent: {}
+[30.355958] (-) TimerEvent: {}
+[30.366275] (robile_navigation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[30.369017] (robile_navigation) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[30.455987] (-) TimerEvent: {}
+[30.556604] (-) TimerEvent: {}
+[30.615189] (robile_navigation) StdoutLine: {'line': b'-- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[30.624138] (robile_navigation) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[30.656944] (-) TimerEvent: {}
+[30.742901] (robile_navigation) StdoutLine: {'line': b'-- Found robile_interfaces: 0.0.0 (/home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake)\n'}
+[30.757206] (-) TimerEvent: {}
+[30.836570] (robile_navigation) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[30.857326] (-) TimerEvent: {}
+[30.957892] (-) TimerEvent: {}
+[31.058801] (-) TimerEvent: {}
+[31.159912] (-) TimerEvent: {}
+[31.262232] (-) TimerEvent: {}
+[31.362885] (-) TimerEvent: {}
+[31.463547] (-) TimerEvent: {}
+[31.564438] (-) TimerEvent: {}
+[31.665161] (-) TimerEvent: {}
+[31.765829] (-) TimerEvent: {}
+[31.782816] (robile_navigation) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[31.789436] (robile_navigation) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[31.792959] (robile_navigation) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[31.809418] (robile_navigation) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[31.816284] (robile_navigation) StdoutLine: {'line': b'-- Configuring done\n'}
+[31.840066] (robile_navigation) StdoutLine: {'line': b'-- Generating done\n'}
+[31.850178] (robile_navigation) StdoutLine: {'line': b'-- Build files have been written to: /home/md/amr_final_ws/build/robile_navigation\n'}
+[31.866219] (-) TimerEvent: {}
+[31.895964] (robile_navigation) CommandEnded: {'returncode': 0}
+[31.897648] (robile_navigation) JobProgress: {'identifier': 'robile_navigation', 'progress': 'build'}
+[31.898591] (robile_navigation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/md/amr_final_ws/build/robile_navigation', '--', '-j8', '-l8'], 'cwd': '/home/md/amr_final_ws/build/robile_navigation', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_navigation'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[31.966193] (-) TimerEvent: {}
+[32.067064] (-) TimerEvent: {}
+[32.115617] (robile_navigation) StdoutLine: {'line': b'Built target ament_cmake_python_symlink_robile_navigation\n'}
+[32.167162] (-) TimerEvent: {}
+[32.267693] (-) TimerEvent: {}
+[32.368486] (-) TimerEvent: {}
+[32.469284] (-) TimerEvent: {}
+[32.570395] (-) TimerEvent: {}
+[32.671256] (-) TimerEvent: {}
+[32.771874] (-) TimerEvent: {}
+[32.872808] (-) TimerEvent: {}
+[32.973367] (-) TimerEvent: {}
+[33.074353] (-) TimerEvent: {}
+[33.175999] (-) TimerEvent: {}
+[33.276425] (-) TimerEvent: {}
+[33.355484] (robile_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[33.359874] (robile_navigation) StdoutLine: {'line': b'creating robile_navigation.egg-info\n'}
+[33.360516] (robile_navigation) StdoutLine: {'line': b'writing robile_navigation.egg-info/PKG-INFO\n'}
+[33.360903] (robile_navigation) StdoutLine: {'line': b'writing dependency_links to robile_navigation.egg-info/dependency_links.txt\n'}
+[33.361368] (robile_navigation) StdoutLine: {'line': b'writing top-level names to robile_navigation.egg-info/top_level.txt\n'}
+[33.362995] (robile_navigation) StdoutLine: {'line': b"writing manifest file 'robile_navigation.egg-info/SOURCES.txt'\n"}
+[33.372617] (robile_navigation) StdoutLine: {'line': b"reading manifest file 'robile_navigation.egg-info/SOURCES.txt'\n"}
+[33.375051] (robile_navigation) StdoutLine: {'line': b"writing manifest file 'robile_navigation.egg-info/SOURCES.txt'\n"}
+[33.376518] (-) TimerEvent: {}
+[33.476943] (-) TimerEvent: {}
+[33.496552] (robile_navigation) StdoutLine: {'line': b'Built target ament_cmake_python_build_robile_navigation_egg\n'}
+[33.546168] (robile_navigation) CommandEnded: {'returncode': 0}
+[33.547830] (robile_navigation) JobProgress: {'identifier': 'robile_navigation', 'progress': 'install'}
+[33.551792] (robile_navigation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/md/amr_final_ws/build/robile_navigation'], 'cwd': '/home/md/amr_final_ws/build/robile_navigation', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'md'), ('ROS_PACKAGE_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/md'), ('OLDPWD', '/home/md/amr_final_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'md'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'md'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/md/amr_final_ws/src/robile_description/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1660,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1660'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3d2e2031_16d9_468d_9f3a_0505232191ab'), ('GNOME_SETUP_DISPLAY', ':1'), ('MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MUJOCO_PY_MUJOCO_PATH', '/opt/mujoco/mujoco-3.9.0'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9NNBU3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/md/amr_final_ws/build/robile_navigation'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces')]), 'shell': False}
+[33.577071] (-) TimerEvent: {}
+[33.583059] (robile_navigation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[33.584013] (robile_navigation) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[33.584956] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/launch/landmark_based_localisation.launch.py\n'}
+[33.615611] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/launch/localization.launch.py\n'}
+[33.641380] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/launch/navigation.launch.py\n'}
+[33.673576] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/launch/online_async.launch.py\n'}
+[33.677323] (-) TimerEvent: {}
+[33.703045] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/launch/robile_nav2_bringup.launch.py\n'}
+[33.735195] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/amcl_config.yaml\n'}
+[33.765019] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/mapper_params_online_async.yaml\n'}
+[33.777876] (-) TimerEvent: {}
+[33.796413] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/nav2_params.yaml\n'}
+[33.823396] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/robile_nav_params.yaml\n'}
+[33.853089] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/robile_ros2_nav.rviz\n'}
+[33.878356] (-) TimerEvent: {}
+[33.896246] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/smacPlannerLattice.json\n'}
+[33.939017] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/maps/closed_walls_map.pgm\n'}
+[33.974498] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/maps/closed_walls_map.yaml\n'}
+[33.978446] (-) TimerEvent: {}
+[34.009228] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/maps/map.pgm\n'}
+[34.044602] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/maps/map.yaml\n'}
+[34.078790] (-) TimerEvent: {}
+[34.079327] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/pythonpath.sh\n'}
+[34.111269] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/pythonpath.dsv\n'}
+[34.145768] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[34.178493] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[34.180086] (-) TimerEvent: {}
+[34.213453] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[34.248023] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[34.280346] (-) TimerEvent: {}
+[34.288530] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation/__init__.py\n'}
+[34.327437] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/lib/robile_navigation/robile_rfid_tag_finder.py\n'}
+[34.360778] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/ament_index/resource_index/package_run_dependencies/robile_navigation\n'}
+[34.380473] (-) TimerEvent: {}
+[34.391404] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/ament_index/resource_index/parent_prefix_path/robile_navigation\n'}
+[34.420563] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/ament_prefix_path.sh\n'}
+[34.446423] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/ament_prefix_path.dsv\n'}
+[34.475874] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/path.sh\n'}
+[34.481106] (-) TimerEvent: {}
+[34.505608] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/path.dsv\n'}
+[34.537574] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/local_setup.bash\n'}
+[34.569862] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/local_setup.sh\n'}
+[34.581149] (-) TimerEvent: {}
+[34.599818] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/local_setup.zsh\n'}
+[34.625349] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/local_setup.dsv\n'}
+[34.656786] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/package.dsv\n'}
+[34.681715] (-) TimerEvent: {}
+[34.689248] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/ament_index/resource_index/packages/robile_navigation\n'}
+[34.724176] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/cmake/robile_navigationConfig.cmake\n'}
+[34.758374] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/cmake/robile_navigationConfig-version.cmake\n'}
+[34.781726] (-) TimerEvent: {}
+[34.789273] (robile_navigation) StdoutLine: {'line': b'-- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/package.xml\n'}
+[34.881929] (-) TimerEvent: {}
+[34.982737] (-) TimerEvent: {}
+[35.063919] (robile_navigation) StdoutLine: {'line': b"Listing '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation'...\n"}
+[35.064654] (robile_navigation) StdoutLine: {'line': b"Compiling '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation/__init__.py'...\n"}
+[35.082746] (-) TimerEvent: {}
+[35.097548] (robile_navigation) CommandEnded: {'returncode': 0}
+[35.154706] (robile_navigation) JobEnded: {'identifier': 'robile_navigation', 'rc': 0}
+[35.156035] (-) EventReactorShutdown: {}

@@ -1,0 +1,236 @@
+[0.059s] Invoking command in '/home/md/amr_final_ws/build/robile_interfaces': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake /home/md/amr_final_ws/src/robile_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_interfaces
+[0.292s] -- The C compiler identification is GNU 11.4.0
+[0.585s] -- The CXX compiler identification is GNU 11.4.0
+[0.615s] -- Detecting C compiler ABI info
+[0.910s] -- Detecting C compiler ABI info - done
+[0.945s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.946s] -- Detecting C compile features
+[0.946s] -- Detecting C compile features - done
+[0.958s] -- Detecting CXX compiler ABI info
+[1.255s] -- Detecting CXX compiler ABI info - done
+[1.282s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.282s] -- Detecting CXX compile features
+[1.283s] -- Detecting CXX compile features - done
+[1.298s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.418s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.933s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.115s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[3.257s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.283s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.324s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.383s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.463s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.546s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.606s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[5.525s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[7.776s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.636s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.756s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[8.763s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[8.916s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[8.917s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[8.918s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[8.918s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[9.043s] -- Found PythonExtra: .so  
+[9.793s] -- Configuring done
+[9.954s] -- Generating done
+[10.000s] -- Build files have been written to: /home/md/amr_final_ws/build/robile_interfaces
+[10.043s] Invoked command in '/home/md/amr_final_ws/build/robile_interfaces' returned '0': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake /home/md/amr_final_ws/src/robile_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_interfaces
+[10.056s] Invoking command in '/home/md/amr_final_ws/build/robile_interfaces': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --build /home/md/amr_final_ws/build/robile_interfaces -- -j8 -l8
+[10.193s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[10.241s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[10.253s] [  7%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[10.298s] [  7%] Built target ament_cmake_python_symlink_robile_interfaces
+[12.099s] [  7%] Built target robile_interfaces__rs
+[12.374s] [ 10%] [32mBuilding C object CMakeFiles/robile_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robile_interfaces/msg/detail/position_labelled__functions.c.o[0m
+[12.375s] [ 12%] [32mBuilding C object CMakeFiles/robile_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robile_interfaces/msg/detail/position_labelled_array__functions.c.o[0m
+[12.415s] [ 12%] Built target robile_interfaces__cpp
+[12.502s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[12.512s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[12.525s] [ 20%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[12.812s] [ 22%] [32m[1mLinking C shared library librobile_interfaces__rosidl_generator_c.so[0m
+[13.033s] [ 22%] Built target robile_interfaces__rosidl_generator_c
+[13.045s] running egg_info
+[13.045s] creating robile_interfaces.egg-info
+[13.046s] writing robile_interfaces.egg-info/PKG-INFO
+[13.046s] writing dependency_links to robile_interfaces.egg-info/dependency_links.txt
+[13.047s] writing top-level names to robile_interfaces.egg-info/top_level.txt
+[13.053s] writing manifest file 'robile_interfaces.egg-info/SOURCES.txt'
+[13.059s] reading manifest file 'robile_interfaces.egg-info/SOURCES.txt'
+[13.061s] writing manifest file 'robile_interfaces.egg-info/SOURCES.txt'
+[13.098s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[13.109s] [ 27%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[13.168s] [ 30%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[13.252s] [ 30%] Built target ament_cmake_python_build_robile_interfaces_egg
+[14.504s] [ 32%] [32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robile_interfaces/msg/position_labelled__type_support.cpp.o[0m
+[14.527s] [ 35%] [32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robile_interfaces/msg/position_labelled_array__type_support.cpp.o[0m
+[14.985s] [ 37%] [32mBuilding C object CMakeFiles/robile_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robile_interfaces/msg/detail/position_labelled__type_support.c.o[0m
+[14.998s] [ 40%] [32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robile_interfaces/msg/detail/position_labelled__type_support.cpp.o[0m
+[15.023s] [ 42%] [32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robile_interfaces/msg/detail/position_labelled_array__type_support.cpp.o[0m
+[15.099s] [ 45%] [32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robile_interfaces/msg/detail/dds_fastrtps/position_labelled__type_support.cpp.o[0m
+[15.195s] [ 47%] [32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robile_interfaces/msg/position_labelled__type_support.cpp.o[0m
+[15.208s] [ 50%] [32mBuilding C object CMakeFiles/robile_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robile_interfaces/msg/detail/position_labelled_array__type_support.c.o[0m
+[15.413s] [ 52%] [32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robile_interfaces/msg/position_labelled_array__type_support.cpp.o[0m
+[15.499s] [ 55%] [32m[1mLinking C shared library librobile_interfaces__rosidl_typesupport_introspection_c.so[0m
+[15.625s] [ 57%] [32m[1mLinking CXX shared library librobile_interfaces__rosidl_typesupport_c.so[0m
+[15.748s] [ 57%] Built target robile_interfaces__rosidl_typesupport_introspection_c
+[15.790s] [ 60%] [32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robile_interfaces/msg/detail/position_labelled__type_support_c.cpp.o[0m
+[15.812s] [ 62%] [32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robile_interfaces/msg/detail/dds_fastrtps/position_labelled_array__type_support.cpp.o[0m
+[16.108s] [ 62%] Built target robile_interfaces__rosidl_typesupport_c
+[16.177s] [ 65%] [32mBuilding CXX object CMakeFiles/robile_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robile_interfaces/msg/detail/position_labelled_array__type_support_c.cpp.o[0m
+[17.065s] [ 67%] [32m[1mLinking CXX shared library librobile_interfaces__rosidl_typesupport_cpp.so[0m
+[17.507s] [ 67%] Built target robile_interfaces__rosidl_typesupport_cpp
+[18.424s] [ 70%] [32m[1mLinking CXX shared library librobile_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[18.704s] [ 72%] [32m[1mLinking CXX shared library librobile_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[19.021s] [ 72%] Built target robile_interfaces__rosidl_typesupport_introspection_cpp
+[19.189s] [ 72%] Built target robile_interfaces__rosidl_typesupport_fastrtps_c
+[19.347s] [ 75%] [32m[1mLinking CXX shared library librobile_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[19.756s] [ 75%] Built target robile_interfaces__rosidl_typesupport_fastrtps_cpp
+[19.840s] [ 75%] Built target robile_interfaces
+[19.924s] [ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[21.679s] [ 77%] Built target robile_interfaces__py
+[21.752s] [ 80%] [32mBuilding C object CMakeFiles/robile_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robile_interfaces/msg/_position_labelled_array_s.c.o[0m
+[21.757s] [ 82%] [32mBuilding C object CMakeFiles/robile_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robile_interfaces/msg/_position_labelled_s.c.o[0m
+[22.117s] [ 85%] [32m[1mLinking C shared library rosidl_generator_py/robile_interfaces/librobile_interfaces__rosidl_generator_py.so[0m
+[22.270s] [ 85%] Built target robile_interfaces__rosidl_generator_py
+[22.340s] [ 90%] [32mBuilding C object CMakeFiles/robile_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[22.341s] [ 90%] [32mBuilding C object CMakeFiles/robile_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[22.343s] [ 92%] [32mBuilding C object CMakeFiles/robile_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[22.800s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/robile_interfaces/robile_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[22.806s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/robile_interfaces/robile_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[22.814s] [100%] [32m[1mLinking C shared library rosidl_generator_py/robile_interfaces/robile_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.111s] [100%] Built target robile_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[23.112s] [100%] Built target robile_interfaces__rosidl_typesupport_c__pyext
+[23.139s] [100%] Built target robile_interfaces__rosidl_typesupport_introspection_c__pyext
+[23.192s] Invoked command in '/home/md/amr_final_ws/build/robile_interfaces' returned '0': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --build /home/md/amr_final_ws/build/robile_interfaces -- -j8 -l8
+[23.198s] Invoking command in '/home/md/amr_final_ws/build/robile_interfaces': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --install /home/md/amr_final_ws/build/robile_interfaces
+[23.229s] -- Install configuration: ""
+[23.230s] -- Execute custom install script
+[23.231s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/ament_index/resource_index/rosidl_interfaces/robile_interfaces
+[23.260s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__functions.h
+[23.290s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__struct.h
+[23.319s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__type_support.h
+[23.351s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__functions.h
+[23.388s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__struct.h
+[23.419s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__type_support.h
+[23.451s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/position_labelled.h
+[23.483s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/position_labelled_array.h
+[23.517s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/rosidl_generator_c__visibility_control.h
+[23.554s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/library_path.sh
+[23.591s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/library_path.dsv
+[23.623s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__rosidl_typesupport_fastrtps_c.h
+[23.654s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__rosidl_typesupport_fastrtps_c.h
+[23.686s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[23.719s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__builder.hpp
+[23.752s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__struct.hpp
+[23.789s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__traits.hpp
+[23.820s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__type_support.hpp
+[23.850s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__builder.hpp
+[23.881s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__struct.hpp
+[23.907s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__traits.hpp
+[23.938s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__type_support.hpp
+[23.967s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/position_labelled.hpp
+[23.997s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/position_labelled_array.hpp
+[24.028s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[24.060s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__rosidl_typesupport_fastrtps_cpp.hpp
+[24.088s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__rosidl_typesupport_fastrtps_cpp.hpp
+[24.114s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[24.140s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__rosidl_typesupport_introspection_c.h
+[24.164s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__rosidl_typesupport_introspection_c.h
+[24.186s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[24.210s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled__rosidl_typesupport_introspection_cpp.hpp
+[24.236s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/include/robile_interfaces/robile_interfaces/msg/detail/position_labelled_array__rosidl_typesupport_introspection_cpp.hpp
+[24.263s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/pythonpath.sh
+[24.289s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/pythonpath.dsv
+[24.320s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[24.357s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[24.388s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[24.418s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[24.446s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/__init__.py
+[24.475s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_c.c
+[24.502s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[24.534s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[24.568s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/librobile_interfaces__rosidl_generator_py.so
+[24.600s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/__init__.py
+[24.644s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled.py
+[24.684s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled_array.py
+[24.719s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled_array_s.c
+[24.760s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled_s.c
+[24.797s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[24.838s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[24.878s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[24.917s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[24.918s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[24.919s] -- Up-to-date symlink: /home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/robile_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[24.920s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/ament_index/resource_index/rust_packages/robile_interfaces
+[24.963s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/rust/Cargo.toml
+[25.004s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/rust/build.rs
+[25.041s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/rust/src/lib.rs
+[25.069s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/rust/src/msg.rs
+[25.092s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/rust/src/msg/rmw.rs
+[25.114s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/msg/PositionLabelled.idl
+[25.139s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/msg/PositionLabelledArray.idl
+[25.170s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/msg/PositionLabelled.msg
+[25.195s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/msg/PositionLabelledArray.msg
+[25.218s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/ament_index/resource_index/package_run_dependencies/robile_interfaces
+[25.242s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/ament_index/resource_index/parent_prefix_path/robile_interfaces
+[25.266s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/ament_prefix_path.sh
+[25.287s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/ament_prefix_path.dsv
+[25.314s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/path.sh
+[25.348s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/environment/path.dsv
+[25.382s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/local_setup.bash
+[25.414s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/local_setup.sh
+[25.445s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/local_setup.zsh
+[25.469s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/local_setup.dsv
+[25.495s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/package.dsv
+[25.528s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/ament_index/resource_index/packages/robile_interfaces
+[25.563s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/rosidl_cmake-extras.cmake
+[25.593s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.616s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[25.653s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[25.683s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[25.710s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[25.741s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[25.775s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfacesConfig.cmake
+[25.812s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfacesConfig-version.cmake
+[25.846s] -- Symlinking: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/package.xml
+[25.876s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_generator_c.so
+[25.877s] -- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_generator_c.so" to ""
+[25.877s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_fastrtps_c.so
+[25.878s] -- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[25.878s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[25.881s] -- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[25.881s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_introspection_c.so
+[25.882s] -- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[25.882s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_c.so
+[25.882s] -- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_c.so" to ""
+[25.883s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_introspection_cpp.so
+[25.883s] -- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[25.884s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_cpp.so
+[25.884s] -- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_typesupport_cpp.so" to ""
+[26.051s] Listing '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces'...
+[26.051s] Compiling '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/__init__.py'...
+[26.051s] Listing '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg'...
+[26.052s] Compiling '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/__init__.py'...
+[26.052s] Compiling '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled.py'...
+[26.052s] Compiling '/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages/robile_interfaces/msg/_position_labelled_array.py'...
+[26.071s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_generator_py.so
+[26.072s] -- Set runtime path of "/home/md/amr_final_ws/install/robile_interfaces/lib/librobile_interfaces__rosidl_generator_py.so" to ""
+[26.072s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_generator_cExport.cmake
+[26.074s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_generator_cExport-noconfig.cmake
+[26.075s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[26.076s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[26.077s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_generator_cppExport.cmake
+[26.077s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[26.077s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[26.078s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[26.078s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[26.078s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_cExport.cmake
+[26.079s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[26.079s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[26.080s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[26.080s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_cppExport.cmake
+[26.081s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/robile_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[26.082s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_generator_pyExport.cmake
+[26.083s] -- Installing: /home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake/export_robile_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[26.092s] Invoked command in '/home/md/amr_final_ws/build/robile_interfaces' returned '0': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --install /home/md/amr_final_ws/build/robile_interfaces

@@ -1,0 +1,100 @@
+[0.043s] Invoking command in '/home/md/amr_final_ws/build/robile_navigation': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake /home/md/amr_final_ws/src/robile_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_navigation
+[0.235s] -- The C compiler identification is GNU 11.4.0
+[0.447s] -- The CXX compiler identification is GNU 11.4.0
+[0.476s] -- Detecting C compiler ABI info
+[0.742s] -- Detecting C compiler ABI info - done
+[0.773s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.774s] -- Detecting C compile features
+[0.778s] -- Detecting C compile features - done
+[0.789s] -- Detecting CXX compiler ABI info
+[1.118s] -- Detecting CXX compiler ABI info - done
+[1.150s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.151s] -- Detecting CXX compile features
+[1.154s] -- Detecting CXX compile features - done
+[1.165s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.915s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.237s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.377s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[2.564s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.589s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.625s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.672s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.738s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.930s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.944s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.267s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.373s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.528s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.572s] -- Looking for pthread.h
+[3.903s] -- Looking for pthread.h - found
+[3.904s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.171s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.173s] -- Found Threads: TRUE  
+[4.419s] -- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+[4.428s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.547s] -- Found robile_interfaces: 0.0.0 (/home/md/amr_final_ws/install/robile_interfaces/share/robile_interfaces/cmake)
+[4.641s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.587s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.594s] -- Added test 'lint_cmake' to check CMake code style
+[5.597s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.614s] -- Added test 'xmllint' to check XML markup files
+[5.620s] -- Configuring done
+[5.644s] -- Generating done
+[5.654s] -- Build files have been written to: /home/md/amr_final_ws/build/robile_navigation
+[5.700s] Invoked command in '/home/md/amr_final_ws/build/robile_navigation' returned '0': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake /home/md/amr_final_ws/src/robile_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/md/amr_final_ws/install/robile_navigation
+[5.708s] Invoking command in '/home/md/amr_final_ws/build/robile_navigation': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --build /home/md/amr_final_ws/build/robile_navigation -- -j8 -l8
+[5.921s] Built target ament_cmake_python_symlink_robile_navigation
+[7.161s] running egg_info
+[7.164s] creating robile_navigation.egg-info
+[7.165s] writing robile_navigation.egg-info/PKG-INFO
+[7.165s] writing dependency_links to robile_navigation.egg-info/dependency_links.txt
+[7.165s] writing top-level names to robile_navigation.egg-info/top_level.txt
+[7.168s] writing manifest file 'robile_navigation.egg-info/SOURCES.txt'
+[7.177s] reading manifest file 'robile_navigation.egg-info/SOURCES.txt'
+[7.179s] writing manifest file 'robile_navigation.egg-info/SOURCES.txt'
+[7.301s] Built target ament_cmake_python_build_robile_navigation_egg
+[7.351s] Invoked command in '/home/md/amr_final_ws/build/robile_navigation' returned '0': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --build /home/md/amr_final_ws/build/robile_navigation -- -j8 -l8
+[7.358s] Invoking command in '/home/md/amr_final_ws/build/robile_navigation': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --install /home/md/amr_final_ws/build/robile_navigation
+[7.387s] -- Install configuration: ""
+[7.388s] -- Execute custom install script
+[7.389s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/launch/landmark_based_localisation.launch.py
+[7.420s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/launch/localization.launch.py
+[7.446s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/launch/navigation.launch.py
+[7.478s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/launch/online_async.launch.py
+[7.507s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/launch/robile_nav2_bringup.launch.py
+[7.539s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/amcl_config.yaml
+[7.569s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/mapper_params_online_async.yaml
+[7.601s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/nav2_params.yaml
+[7.627s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/robile_nav_params.yaml
+[7.657s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/robile_ros2_nav.rviz
+[7.700s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/config/smacPlannerLattice.json
+[7.743s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/maps/closed_walls_map.pgm
+[7.779s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/maps/closed_walls_map.yaml
+[7.813s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/maps/map.pgm
+[7.849s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/maps/map.yaml
+[7.883s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/pythonpath.sh
+[7.915s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/pythonpath.dsv
+[7.950s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation-0.0.0-py3.10.egg-info/PKG-INFO
+[7.983s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.018s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.052s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation-0.0.0-py3.10.egg-info/top_level.txt
+[8.093s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation/__init__.py
+[8.132s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/lib/robile_navigation/robile_rfid_tag_finder.py
+[8.165s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/ament_index/resource_index/package_run_dependencies/robile_navigation
+[8.195s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/ament_index/resource_index/parent_prefix_path/robile_navigation
+[8.225s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/ament_prefix_path.sh
+[8.251s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/ament_prefix_path.dsv
+[8.280s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/path.sh
+[8.310s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/environment/path.dsv
+[8.342s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/local_setup.bash
+[8.375s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/local_setup.sh
+[8.404s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/local_setup.zsh
+[8.430s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/local_setup.dsv
+[8.461s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/package.dsv
+[8.493s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/ament_index/resource_index/packages/robile_navigation
+[8.528s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/cmake/robile_navigationConfig.cmake
+[8.562s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/cmake/robile_navigationConfig-version.cmake
+[8.593s] -- Symlinking: /home/md/amr_final_ws/install/robile_navigation/share/robile_navigation/package.xml
+[8.868s] Listing '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation'...
+[8.869s] Compiling '/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages/robile_navigation/__init__.py'...
+[8.905s] Invoked command in '/home/md/amr_final_ws/build/robile_navigation' returned '0': CMAKE_PREFIX_PATH=/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble:/home/md/ros2_robot_ws/install/robot_interfaces /usr/bin/cmake --install /home/md/amr_final_ws/build/robile_navigation

@@ -1,0 +1,1 @@
+/home/md/amr_final_ws/build/robile_interfaces/rosidl_generator_py/robile_interfaces/_robile_interfaces_s.ep.rosidl_typesupport_c.c
