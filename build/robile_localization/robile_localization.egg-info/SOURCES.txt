@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+config/localization_params.yaml
+launch/localization.launch.py
+resource/robile_localization
+robile_localization/__init__.py
+robile_localization/particle_filter_node.py
+robile_localization.egg-info/PKG-INFO
+robile_localization.egg-info/SOURCES.txt
+robile_localization.egg-info/dependency_links.txt
+robile_localization.egg-info/entry_points.txt
+robile_localization.egg-info/requires.txt
+robile_localization.egg-info/top_level.txt
+robile_localization.egg-info/zip-safe

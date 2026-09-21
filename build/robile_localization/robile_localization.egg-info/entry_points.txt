@@ -1,0 +1,3 @@
+[console_scripts]
+particle_filter = robile_localization.particle_filter_node:main
+

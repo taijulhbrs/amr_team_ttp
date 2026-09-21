@@ -1,103 +1,219 @@
-
-# AMR FINAL PROJECT
-
-
-## Important Information
-
-| Item | Details |
-|------|---------|
-| Assignment Release | 1 July 2026 |
-| Due Date | **28 September 2026, 23:59 CET** |
-| Repository Visibility | Public |
-| Team Size | 3–4 students |
-| Submission | Prepare a report with the format explained in class and Submit the GitHub repository URL on LEA |
-
-
-# Getting Started
-
-## Step 1
-
-Click **Use this template** (green button at the top of this page).
-
-## Step 2
-
-Create a new repository using the following naming convention:
-
-```
-amr-team-<team_name>
-```
-
-Replace '<team_name>' with your desired team name.
-
-## Step 3
-
-Set the repository visibility to **Public** and create the repository.
-
-## Step 4
-
-Invite your team members as collaborators to the repository.
-
-```
-Settings
-    ↓
-Collaborators
-    ↓
-Add people
-```
-
-## Step 5
-
-Clone your repository
-
-example:
-
-```bash
-git clone https://github.com/amr-team-<team_name>.git
-```
-
-## Finally
-
-Work collaboratively by splitting the tasks among team members and individually push your code to the repository.
-
-## Important Note
-
-- Team members work is evaluated based on your commit history, if  we do not see any commits from a team member then we cannot consider their contribution. 
-
-- You can use issue boards and other tools to create issues and pull requests to manage your work and better showcase collaboration.
-
-- Make sure you record almost every session because you need a working video to add into the report. Make sure to take screenshots, screenrecords etc to document your work in an effective manner.
-
-- The robots in the lab are prone to issues so finish everything on simulation as fast as you can and start testing as soon as you can, do not wait until the last moment.
-
-- Make sure to use only one branch to track all of your codes and also do not upload entire folders on to Github, use a gitignore and keep only required files on there.
-
-- Write a nice Readme file on how to use the codes and also explain your approach for the tasks and also any challenges you faced, Feel free to modify this file.
-
-- Ensure when leaving the lab you charge the robots for next team that is coming or if you are the last team unplug the robot, switch it off and then leave.
-
-- Feel free to post any issues you faced on LEA, always refer to the documentation when in confusion and retrace your steps.
----
-
-# AMR Project
+# AMR Project — Robile4/Robile3 dular mobile robot platform, developed as part of
+the Autonomous Mobile Robots course project.
 
 ## Project Objectives
 
-The objective of this project is that you deploy some of the functionalities that were discussed during the course on a real robot platform. In particular, we want to have functionalities for path and motion planning, localisation, and environment exploration on the robot.
+1. **Path & Motion Planning** — port a potential field planner to the real
+   robot, and combine it with a global path planner (A*) so it can navigate
+   large, mapped environments.
+2. **Localisation** — implement a Monte Carlo Localisation (particle filter)
+   from scratch to estimate the robot's pose on a known map.
+3. **Environment Exploration** *(not yet started)* — combine frontier-based
+   pose selection with SLAM so the robot can autonomously map unknown areas.
 
-We will particularly use the Robile platform during the project; you are already familiar with this robot from the simulation you have been using throughout the semester as well as from the few practical lab sessions that we have had.
+This repository currently covers **Part 1 and Part 2**.
 
-## Task Description
+---
 
-The project consists of three parts that are building on each other: (i) path and motion planning, (ii) localisation, and (iii) environment exploration.
+## Repository / Package Overview
 
-### 1. Path and Motion Planning
+| Package | Purpose | Used for |
+|---|---|---|
+| `robile_description` | Robot URDF/xacro model | Sim + real |
+| `robile_gazebo` | Gazebo simulation launch files | Sim only |
+| `robile_navigation` | SLAM (`slam_toolbox`) launch files, saved maps | Sim + real |
+| `robile_bringup` | Real hardware driver bring-up | Real robot only |
+| `robile_planning` | **Part 1** — A* global planner + potential field local planner | Sim + real |
+| `robile_localization` | **Part 2** — Monte Carlo Localisation (particle filter) | Sim + real |
 
-You have already implemented a *potential field planner* in one of your assignments. In this first part of the project, you need to port your implementation to the real robot and ensure that it is working as well as it was in the simulated environment so that you can navigate towards global goals while avoiding obstacles. Then, integrate your potential field planner with a global path planner, namely first use a path planner (e.g. A*) to find a rough global trajectory of waypoints that the robot can follow to reach a goal and then use the potential field planner to navigate between the waypoints. This will make your potential field planner applicable to large environments, where it can navigate given an environment map.
+---
 
-### 2. Localisation
+## Part 1: Path & Motion Planning
 
-In one of the course lectures, we discussed Monte Carlo localisation as a practical solution to the robot localisation problem in an existing map. In this second part of the project, your objective is to implement your very own particle filter that you then integrate on the Robile. You should implement the simple version of the filter that we discussed in the lecture; however, if you have time and interest, you are free to additionally explore extensions / improvements to the algorithm, for example in the form of the adaptive Monte Carlo approach that we mentioned in the lecture.
+**Package:** `robile_planning`
 
-### 3. Environment Exploration
+### Nodes
 
-The final objective of the project is to incorporate an environment exploration functionality to the robot. This will have to be combined with a SLAM component, namely you will need your exploration component to select poses to explore and a SLAM component that will take care of actually creating a map. The exploration algorithm should ideally select poses at the map fringe (i.e. poses that are at the boundary between the explored and unexplored region), but you are free to explore different pose selection strategies in your implementation.
+- **`global_planner`** — runs A* search over an inflated occupancy grid
+  (`/map`), from the robot's current pose to a given goal (`/goal_pose`).
+  The raw cell-by-cell path is simplified down to waypoints kept only at
+  direction changes, and published on `/global_path`.
+- **`potential_field_planner`** — subscribes to `/global_path` and tracks an
+  index into the waypoint list. At each control step it computes:
+  - an **attractive force** toward the current target waypoint,
+  - a **repulsive force** from any laser scan point (`/scan`) inside an
+    influence radius,
+
+  sums them, and converts the resultant force vector into a `/cmd_vel`
+  command. When the robot is within `waypoint_tolerance` of a waypoint it
+  advances to the next one; reaching the last one stops the robot and logs
+  `🎯 Reached goal!`.
+
+### Key topics
+
+| Topic | Type | Direction |
+|---|---|---|
+| `/map` | `nav_msgs/OccupancyGrid` | in (global_planner) |
+| `/goal_pose` | `geometry_msgs/PoseStamped` | in (global_planner) — e.g. RViz "2D Goal Pose" |
+| `/global_path` | `nav_msgs/Path` | out (global_planner) / in (potential_field_planner) |
+| `/scan` | `sensor_msgs/LaserScan` | in (potential_field_planner) |
+| `/cmd_vel` | `geometry_msgs/Twist` | out (potential_field_planner) |
+
+### Pose source
+
+Both nodes read the robot's pose via the `map → base_link` TF transform
+(param `use_tf_pose: true`), which is provided by the Part 2 particle filter.
+If that transform isn't available, they fall back to raw `/odom`.
+
+### Run it
+
+```bash
+ros2 launch robile_planning planning.launch.py
+```
+
+Then send a goal via RViz's **"2D Goal Pose"** tool, or:
+```bash
+ros2 topic pub --once /goal_pose geometry_msgs/PoseStamped \
+  '{header: {frame_id: "map"}, pose: {position: {x: 2.0, y: 1.0}}}'
+```
+
+### Tunable parameters
+
+See `config/planning_params.yaml` — key ones: `attractive_gain`,
+`repulsive_gain`, `obstacle_influence_radius`, `inflation_radius_cells`.
+
+---
+
+## Part 2: Localisation (Monte Carlo Localisation)
+
+**Package:** `robile_localization`
+
+### Node: `particle_filter`
+
+A from-scratch implementation of the sequential importance resampling
+particle filter (the "simple version" of MCL), consisting of:
+
+1. **Initialise** — particles scattered around an initial pose guess, given
+   via RViz's **"2D Pose Estimate"** tool (topic `/initialpose`).
+2. **Predict** — on each `/odom` update, every particle is moved by the same
+   odometry delta plus noise, using the standard odometry motion model
+   (`alpha1`–`alpha4` noise parameters).
+3. **Update** — on each `/scan` message, particles are weighted using a
+   likelihood-field measurement model: a distance-to-nearest-obstacle grid is
+   precomputed once from the map (multi-source BFS), and each particle's
+   weight reflects how well its predicted laser hits align with that field.
+4. **Resample** — low-variance resampling, proportional to weight.
+5. **Publish** — the weighted mean pose is broadcast as the `map → odom` TF
+   transform (replacing the need for AMCL or a static placeholder
+   transform), plus:
+   - `/particle_cloud` (`geometry_msgs/PoseArray`) — visualise in RViz with
+     a **PoseArray** display.
+   - `/pf_pose` (`geometry_msgs/PoseWithCovarianceStamped`) — the pose
+     estimate for other nodes to consume.
+
+### Run it
+
+```bash
+ros2 launch robile_localization localization.launch.py
+```
+
+In RViz:
+1. Add a **PoseArray** display on `/particle_cloud`.
+2. Use **"2D Pose Estimate"** to seed the initial pose.
+3. Move the robot — the particle cloud should converge (tighten) around the
+   robot's true position as laser updates arrive.
+
+### Tunable parameters
+
+See `config/localization_params.yaml` — key ones: `num_particles`,
+`laser_subsample` (performance vs. accuracy trade-off), `sigma_hit`,
+`z_hit`/`z_rand`.
+
+### Known limitation
+
+Like the basic MCL taught in the lecture, this implementation cannot recover
+from the "kidnapped robot" problem (no random-particle re-injection). This is
+a natural direction for the optional adaptive MCL extension mentioned in the
+assignment.
+
+---
+
+## Full Pipeline: Map → Localisation → Planning
+
+```
+   Map (SLAM, saved once)
+          │
+          ▼
+     map_server  ──────────────►  /map
+          │
+          ▼
+  particle_filter (Part 2)  ─────►  /pf_pose, /particle_cloud, TF: map→odom
+          │
+          ▼
+  global_planner (Part 1)  ──────►  /global_path   (A* over /map, using TF pose)
+          │
+          ▼
+  potential_field_planner (Part 1) ─► /cmd_vel   (waypoint following + obstacle avoidance)
+```
+
+**Important:** the map used must match the actual environment the robot is
+driving in. A map built in one Gazebo world (or the real corridor) will
+cause the particle filter to diverge if tested against a *different*
+environment — laser scans won't match the map's obstacles, weights become
+degenerate, and the pose estimate drifts outside the map bounds.
+
+---
+
+## Running on the Real Robot (Robile4)
+
+```bash
+# 1. Power on the robot, connect to "Robile5G" WiFi
+ssh -x studentkelo@192.168.0.104          # password: area5142
+tmux new -s robot_session
+ros2 launch robile_bringup robot.launch.py   # leave running
+
+# 2. On your laptop, in every new terminal:
+export ROS_DOMAIN_ID=4
+
+# 3. Serve the map
+ros2 run nav2_map_server map_server --ros-args \
+  -p yaml_filename:=<path_to_map>.yaml -p use_sim_time:=false
+ros2 lifecycle set /map_server configure
+ros2 lifecycle set /map_server activate
+
+# 4. Localise
+ros2 launch robile_localization localization.launch.py
+# In RViz: "2D Pose Estimate" to seed the particle filter
+
+# 5. Plan and navigate
+ros2 launch robile_planning planning.launch.py
+# In RViz: "2D Goal Pose" to send a goal
+```
+
+## Running in Simulation (Gazebo)
+
+Same as above, but:
+- Launch `ros2 launch robile_gazebo gazebo_4_wheel.launch.py` instead of SSH-ing
+  into hardware.
+- Use `use_sim_time:=true` for `map_server`.
+- **The map must be built via SLAM (`robile_navigation`'s `online_async.launch.py`)
+  inside the exact same Gazebo world** you intend to test in — reusing the real
+  robot's map in a mismatched simulated world will cause the particle filter
+  to diverge.
+
+---
+
+## Status
+
+- ✅ Part 1 (A* + potential field planner) — implemented, tested in both
+  Gazebo (matched map) and on the real robot in the lab corridor.
+- ✅ Part 2 (particle filter / MCL) — implemented; convergence verified when
+  map and environment match; TF-integrated with Part 1.
+- ⬜ Part 3 (frontier-based exploration + SLAM) — not started.
+
+## Next Steps
+
+- Build Part 3: frontier detection + autonomous exploration combined with
+  `slam_toolbox`.
+- Optional: tune particle filter noise parameters against real robot data;
+  explore adaptive MCL (dynamic particle count).

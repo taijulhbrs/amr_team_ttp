@@ -1,18 +1,6 @@
 #!/usr/bin/env python3
 """
 A* global planner.
-
-Subscribes:
-  /map        (nav_msgs/OccupancyGrid) - the environment map
-  /goal_pose  (geometry_msgs/PoseStamped) - goal, e.g. from RViz "2D Nav Goal"
-  /odom       (nav_msgs/Odometry) - current robot pose (start of the search)
-
-Publishes:
-  /global_path (nav_msgs/Path) - a sparse list of waypoints from robot to goal
-
-The path is simplified (only kept at direction changes) so that the
-potential-field planner has a small number of waypoints to chase rather
-than every single grid cell.
 """
 import math
 import heapq
@@ -20,9 +8,12 @@ import heapq
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile, QoSDurabilityPolicy, QoSHistoryPolicy, QoSReliabilityPolicy
+from rclpy.time import Time
 
 from nav_msgs.msg import OccupancyGrid, Path, Odometry
 from geometry_msgs.msg import PoseStamped
+from tf2_ros import Buffer, TransformListener
+from tf2_ros import LookupException, ConnectivityException, ExtrapolationException
 
 
 class GlobalPlanner(Node):
@@ -36,9 +27,18 @@ class GlobalPlanner(Node):
         self.declare_parameter('map_topic', '/map')
         self.declare_parameter('goal_topic', '/goal_pose')
         self.declare_parameter('path_topic', '/global_path')
+        self.declare_parameter('map_frame', 'map')
+        self.declare_parameter('base_frame', 'base_link')
+        self.declare_parameter('use_tf_pose', True)
 
         self.inflation_radius = self.get_parameter('inflation_radius_cells').value
         self.occ_thresh = self.get_parameter('occupied_threshold').value
+        self.map_frame = self.get_parameter('map_frame').value
+        self.base_frame = self.get_parameter('base_frame').value
+        self.use_tf_pose = self.get_parameter('use_tf_pose').value
+
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
 
         map_qos = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
@@ -73,14 +73,17 @@ class GlobalPlanner(Node):
         if self.map_msg is None:
             self.get_logger().warn('No map received yet, cannot plan.')
             return
-        if self.robot_pose is None:
-            self.get_logger().warn('No odometry received yet, cannot plan.')
+
+        start_pose = self._get_robot_pose_map_frame()
+        if start_pose is None:
+            self.get_logger().warn(
+                'No robot pose available yet (map->base_link TF or odom), cannot plan.')
             return
 
         goal_xy = (msg.pose.position.x, msg.pose.position.y)
-        self.get_logger().info(f'Planning from {self.robot_pose} to {goal_xy}')
+        self.get_logger().info(f'Planning from {start_pose} to {goal_xy}')
 
-        path_cells = self._astar(self.robot_pose, goal_xy)
+        path_cells = self._astar(start_pose, goal_xy)
         if path_cells is None:
             self.get_logger().error('A* failed to find a path to the goal.')
             return
@@ -92,6 +95,21 @@ class GlobalPlanner(Node):
             f'Published path with {len(simplified)} waypoints '
             f'(from {len(path_world)} raw cells).'
         )
+
+    # ---------- pose helper ----------
+
+    def _get_robot_pose_map_frame(self):
+        """Return (x, y) of the robot in the map frame, preferring the
+        map->base_link TF (corrected by localisation, e.g. the particle
+        filter) and falling back to raw odom if TF isn't available yet."""
+        if self.use_tf_pose:
+            try:
+                t = self.tf_buffer.lookup_transform(
+                    self.map_frame, self.base_frame, Time())
+                return (t.transform.translation.x, t.transform.translation.y)
+            except (LookupException, ConnectivityException, ExtrapolationException):
+                pass  # TF not ready yet; fall back below
+        return self.robot_pose
 
     # ---------- grid helpers ----------
 
@@ -217,7 +235,7 @@ class GlobalPlanner(Node):
             dy2 = points[i + 1][1] - points[i][1]
             cur_dir = math.atan2(dy1, dx1)
             nxt_dir = math.atan2(dy2, dx2)
-            if abs(cur_dir - nxt_dir) > 0.15:  # ~8.5 degrees
+            if abs(cur_dir - nxt_dir) > 0.15:
                 if math.hypot(points[i][0] - simplified[-1][0],
                               points[i][1] - simplified[-1][1]) >= min_spacing:
                     simplified.append(points[i])

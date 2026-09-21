@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating robile_localization.egg-info
+writing robile_localization.egg-info/PKG-INFO
+writing dependency_links to robile_localization.egg-info/dependency_links.txt
+writing entry points to robile_localization.egg-info/entry_points.txt
+writing requirements to robile_localization.egg-info/requires.txt
+writing top-level names to robile_localization.egg-info/top_level.txt
+writing manifest file 'robile_localization.egg-info/SOURCES.txt'
+reading manifest file 'robile_localization.egg-info/SOURCES.txt'
+writing manifest file 'robile_localization.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/md/amr_final_ws/install/robile_localization/lib/python3.10/site-packages/robile-localization.egg-link (link to .)
+Installing particle_filter script to /home/md/amr_final_ws/install/robile_localization/lib/robile_localization
+
+Installed /home/md/amr_final_ws/build/robile_localization
+running symlink_data
+creating /home/md/amr_final_ws/install/robile_localization/share/ament_index
+creating /home/md/amr_final_ws/install/robile_localization/share/ament_index/resource_index
+creating /home/md/amr_final_ws/install/robile_localization/share/ament_index/resource_index/packages
+symbolically linking /home/md/amr_final_ws/build/robile_localization/resource/robile_localization -> /home/md/amr_final_ws/install/robile_localization/share/ament_index/resource_index/packages
+symbolically linking /home/md/amr_final_ws/build/robile_localization/package.xml -> /home/md/amr_final_ws/install/robile_localization/share/robile_localization
+creating /home/md/amr_final_ws/install/robile_localization/share/robile_localization/launch
+symbolically linking /home/md/amr_final_ws/build/robile_localization/launch/localization.launch.py -> /home/md/amr_final_ws/install/robile_localization/share/robile_localization/launch
+creating /home/md/amr_final_ws/install/robile_localization/share/robile_localization/config
+symbolically linking /home/md/amr_final_ws/build/robile_localization/config/localization_params.yaml -> /home/md/amr_final_ws/install/robile_localization/share/robile_localization/config

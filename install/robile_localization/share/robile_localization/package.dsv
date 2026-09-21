@@ -1,0 +1,9 @@
+source;share/robile_localization/hook/pythonpath.ps1
+source;share/robile_localization/hook/pythonpath.dsv
+source;share/robile_localization/hook/pythonpath.sh
+source;share/robile_localization/hook/ament_prefix_path.ps1
+source;share/robile_localization/hook/ament_prefix_path.dsv
+source;share/robile_localization/hook/ament_prefix_path.sh
+source;../../build/robile_localization/share/robile_localization/hook/pythonpath_develop.ps1
+source;../../build/robile_localization/share/robile_localization/hook/pythonpath_develop.dsv
+source;../../build/robile_localization/share/robile_localization/hook/pythonpath_develop.sh
