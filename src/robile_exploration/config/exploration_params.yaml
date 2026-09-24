@@ -1,0 +1,11 @@
+frontier_explorer:
+  ros__parameters:
+    map_topic: /map
+    goal_topic: /goal_pose
+    map_frame: map
+    base_frame: base_link
+    min_frontier_size: 6
+    occupied_threshold: 50
+    goal_tolerance: 0.4
+    goal_timeout: 25.0
+    explore_check_period: 2.0
