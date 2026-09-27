@@ -1,0 +1,28 @@
+[0.769s] Invoking command in '/home/md/amr_final_ws/build/robile_exploration': PYTHONPATH=/home/md/amr_final_ws/build/robile_exploration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/md/amr_final_ws/install/robile_exploration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/md/amr_final_ws/build/robile_exploration/build --no-deps symlink_data
+[1.092s] running develop
+[1.316s] running egg_info
+[1.316s] creating robile_exploration.egg-info
+[1.316s] writing robile_exploration.egg-info/PKG-INFO
+[1.317s] writing dependency_links to robile_exploration.egg-info/dependency_links.txt
+[1.317s] writing entry points to robile_exploration.egg-info/entry_points.txt
+[1.317s] writing requirements to robile_exploration.egg-info/requires.txt
+[1.317s] writing top-level names to robile_exploration.egg-info/top_level.txt
+[1.317s] writing manifest file 'robile_exploration.egg-info/SOURCES.txt'
+[1.319s] reading manifest file 'robile_exploration.egg-info/SOURCES.txt'
+[1.319s] writing manifest file 'robile_exploration.egg-info/SOURCES.txt'
+[1.321s] running build_ext
+[1.321s] Creating /home/md/amr_final_ws/install/robile_exploration/lib/python3.10/site-packages/robile-exploration.egg-link (link to .)
+[1.322s] Installing frontier_explorer script to /home/md/amr_final_ws/install/robile_exploration/lib/robile_exploration
+[1.322s] 
+[1.322s] Installed /home/md/amr_final_ws/build/robile_exploration
+[1.322s] running symlink_data
+[1.322s] creating /home/md/amr_final_ws/install/robile_exploration/share/ament_index
+[1.323s] creating /home/md/amr_final_ws/install/robile_exploration/share/ament_index/resource_index
+[1.323s] creating /home/md/amr_final_ws/install/robile_exploration/share/ament_index/resource_index/packages
+[1.323s] symbolically linking /home/md/amr_final_ws/build/robile_exploration/resource/robile_exploration -> /home/md/amr_final_ws/install/robile_exploration/share/ament_index/resource_index/packages
+[1.323s] symbolically linking /home/md/amr_final_ws/build/robile_exploration/package.xml -> /home/md/amr_final_ws/install/robile_exploration/share/robile_exploration
+[1.323s] creating /home/md/amr_final_ws/install/robile_exploration/share/robile_exploration/launch
+[1.323s] symbolically linking /home/md/amr_final_ws/build/robile_exploration/launch/exploration.launch.py -> /home/md/amr_final_ws/install/robile_exploration/share/robile_exploration/launch
+[1.323s] creating /home/md/amr_final_ws/install/robile_exploration/share/robile_exploration/config
+[1.323s] symbolically linking /home/md/amr_final_ws/build/robile_exploration/config/exploration_params.yaml -> /home/md/amr_final_ws/install/robile_exploration/share/robile_exploration/config
+[1.361s] Invoked command in '/home/md/amr_final_ws/build/robile_exploration' returned '0': PYTHONPATH=/home/md/amr_final_ws/build/robile_exploration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/md/amr_final_ws/install/robile_exploration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/md/amr_final_ws/build/robile_exploration/build --no-deps symlink_data

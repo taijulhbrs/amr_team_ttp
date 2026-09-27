@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+	#!/usr/bin/env python3
 """
 Potential field local planner.
 """
@@ -171,7 +171,7 @@ class PotentialFieldPlanner(Node):
 
         angular_z = max(-self.max_w, min(self.max_w, 2.0 * angle_error))
 
-        if abs(angle_error) > 1.2:
+        if abs(angle_error) > 0.6:
             linear_x = 0.0
         else:
             linear_x = max(0.0, min(self.max_v, 0.5 * force_mag))

@@ -1,0 +1,18 @@
+[3.036s] Invoking command in '/home/md/amr_final_ws/build/robile_planning': PYTHONPATH=/home/md/amr_final_ws/build/robile_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/md/amr_final_ws/install/robile_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/md/amr_final_ws/build/robile_planning/build --no-deps symlink_data
+[4.058s] running develop
+[4.814s] running egg_info
+[4.814s] writing robile_planning.egg-info/PKG-INFO
+[4.815s] writing dependency_links to robile_planning.egg-info/dependency_links.txt
+[4.815s] writing entry points to robile_planning.egg-info/entry_points.txt
+[4.816s] writing requirements to robile_planning.egg-info/requires.txt
+[4.816s] writing top-level names to robile_planning.egg-info/top_level.txt
+[4.822s] reading manifest file 'robile_planning.egg-info/SOURCES.txt'
+[4.824s] writing manifest file 'robile_planning.egg-info/SOURCES.txt'
+[4.831s] running build_ext
+[4.831s] Creating /home/md/amr_final_ws/install/robile_planning/lib/python3.10/site-packages/robile-planning.egg-link (link to .)
+[4.834s] Installing global_planner script to /home/md/amr_final_ws/install/robile_planning/lib/robile_planning
+[4.834s] Installing potential_field_planner script to /home/md/amr_final_ws/install/robile_planning/lib/robile_planning
+[4.835s] 
+[4.835s] Installed /home/md/amr_final_ws/build/robile_planning
+[4.835s] running symlink_data
+[4.917s] Invoked command in '/home/md/amr_final_ws/build/robile_planning' returned '0': PYTHONPATH=/home/md/amr_final_ws/build/robile_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/md/amr_final_ws/install/robile_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/md/amr_final_ws/build/robile_planning/build --no-deps symlink_data

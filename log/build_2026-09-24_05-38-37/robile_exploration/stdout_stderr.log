@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating robile_exploration.egg-info
+writing robile_exploration.egg-info/PKG-INFO
+writing dependency_links to robile_exploration.egg-info/dependency_links.txt
+writing entry points to robile_exploration.egg-info/entry_points.txt
+writing requirements to robile_exploration.egg-info/requires.txt
+writing top-level names to robile_exploration.egg-info/top_level.txt
+writing manifest file 'robile_exploration.egg-info/SOURCES.txt'
+reading manifest file 'robile_exploration.egg-info/SOURCES.txt'
+writing manifest file 'robile_exploration.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/md/amr_final_ws/install/robile_exploration/lib/python3.10/site-packages/robile-exploration.egg-link (link to .)
+Installing frontier_explorer script to /home/md/amr_final_ws/install/robile_exploration/lib/robile_exploration
+
+Installed /home/md/amr_final_ws/build/robile_exploration
+running symlink_data
+creating /home/md/amr_final_ws/install/robile_exploration/share/ament_index
+creating /home/md/amr_final_ws/install/robile_exploration/share/ament_index/resource_index
+creating /home/md/amr_final_ws/install/robile_exploration/share/ament_index/resource_index/packages
+symbolically linking /home/md/amr_final_ws/build/robile_exploration/resource/robile_exploration -> /home/md/amr_final_ws/install/robile_exploration/share/ament_index/resource_index/packages
+symbolically linking /home/md/amr_final_ws/build/robile_exploration/package.xml -> /home/md/amr_final_ws/install/robile_exploration/share/robile_exploration
+creating /home/md/amr_final_ws/install/robile_exploration/share/robile_exploration/launch
+symbolically linking /home/md/amr_final_ws/build/robile_exploration/launch/exploration.launch.py -> /home/md/amr_final_ws/install/robile_exploration/share/robile_exploration/launch
+creating /home/md/amr_final_ws/install/robile_exploration/share/robile_exploration/config
+symbolically linking /home/md/amr_final_ws/build/robile_exploration/config/exploration_params.yaml -> /home/md/amr_final_ws/install/robile_exploration/share/robile_exploration/config

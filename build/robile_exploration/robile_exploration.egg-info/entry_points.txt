@@ -1,0 +1,3 @@
+[console_scripts]
+frontier_explorer = robile_exploration.frontier_explorer:main
+
