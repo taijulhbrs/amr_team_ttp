@@ -1,7 +1,9 @@
 package.xml
 setup.cfg
 setup.py
+config/amcl_params.yaml
 config/localization_params.yaml
+launch/amcl_localization.launch.py
 launch/localization.launch.py
 resource/robile_localization
 robile_localization/__init__.py

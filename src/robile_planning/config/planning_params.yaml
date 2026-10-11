@@ -10,8 +10,8 @@ global_planner:
 potential_field_planner:
   ros__parameters:
     attractive_gain: 1.0
-    repulsive_gain: 1.5
-    obstacle_influence_radius: 0.8
+    repulsive_gain: 0.8
+    obstacle_influence_radius: 0.35
     waypoint_tolerance: 0.25
     max_linear_speed: 0.4
     max_angular_speed: 1.5

@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-A* global planner.
+A* global planner, with a soft distance-based cost penalty so paths prefer
+open space over hugging walls, on top of the hard inflation-based blocking.
 """
 import math
 import heapq
+from collections import deque
 
 import rclpy
 from rclpy.node import Node
@@ -31,11 +33,17 @@ class GlobalPlanner(Node):
         self.declare_parameter('base_frame', 'base_link')
         self.declare_parameter('use_tf_pose', True)
 
+        # --- soft cost penalty (prefer open space over hugging walls) ---
+        self.declare_parameter('cost_radius_cells', 8)
+        self.declare_parameter('cost_weight', 4.0)
+
         self.inflation_radius = self.get_parameter('inflation_radius_cells').value
         self.occ_thresh = self.get_parameter('occupied_threshold').value
         self.map_frame = self.get_parameter('map_frame').value
         self.base_frame = self.get_parameter('base_frame').value
         self.use_tf_pose = self.get_parameter('use_tf_pose').value
+        self.cost_radius = self.get_parameter('cost_radius_cells').value
+        self.cost_weight = self.get_parameter('cost_weight').value
 
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
@@ -49,6 +57,7 @@ class GlobalPlanner(Node):
 
         self.map_msg = None
         self.inflated_grid = None
+        self.distance_grid = None  # cells-to-nearest-obstacle, for cost penalty
         self.robot_pose = None  # (x, y) in world frame
 
         self.create_subscription(OccupancyGrid, self.get_parameter('map_topic').value,
@@ -65,6 +74,7 @@ class GlobalPlanner(Node):
     def map_cb(self, msg: OccupancyGrid):
         self.map_msg = msg
         self.inflated_grid = self._inflate_obstacles(msg)
+        self.distance_grid = self._build_distance_grid(msg)
 
     def odom_cb(self, msg: Odometry):
         self.robot_pose = (msg.pose.pose.position.x, msg.pose.pose.position.y)
@@ -124,7 +134,9 @@ class GlobalPlanner(Node):
         return (wx, wy)
 
     def _inflate_obstacles(self, msg: OccupancyGrid):
-        """Return a set of occupied (inflated) grid cells for fast lookup."""
+        """Return a set of occupied (inflated) grid cells for fast lookup.
+        This is the HARD blocking boundary: A* will never enter these cells
+        at all, regardless of cost."""
         w, h = msg.info.width, msg.info.height
         data = msg.data
         occupied = set()
@@ -148,12 +160,50 @@ class GlobalPlanner(Node):
                             inflated.add((nx, ny))
         return inflated
 
+    def _build_distance_grid(self, msg: OccupancyGrid):
+        """Multi-source BFS distance (in cells) from every free cell to the
+        nearest raw occupied cell. Used as a SOFT cost penalty so A* prefers
+        paths through open space over hugging walls, independent of the
+        hard inflation_radius_cells blocking boundary above."""
+        w, h = msg.info.width, msg.info.height
+        data = msg.data
+
+        dist = [[math.inf] * w for _ in range(h)]
+        q = deque()
+        for y in range(h):
+            row_off = y * w
+            for x in range(w):
+                if data[row_off + x] >= self.occ_thresh:
+                    dist[y][x] = 0
+                    q.append((x, y))
+
+        while q:
+            x, y = q.popleft()
+            d = dist[y][x]
+            for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                nx, ny = x + dx, y + dy
+                if 0 <= nx < w and 0 <= ny < h and dist[ny][nx] > d + 1:
+                    dist[ny][nx] = d + 1
+                    q.append((nx, ny))
+        return dist
+
     def _is_free(self, cell):
         x, y = cell
         w, h = self.map_msg.info.width, self.map_msg.info.height
         if not (0 <= x < w and 0 <= y < h):
             return False
         return cell not in self.inflated_grid
+
+    def _cost_penalty(self, cell):
+        """Extra cost for moving into `cell`, growing the closer it is to
+        an obstacle, zero once at least `cost_radius_cells` away."""
+        if self.cost_radius <= 0:
+            return 0.0
+        x, y = cell
+        d = self.distance_grid[y][x]
+        if d >= self.cost_radius:
+            return 0.0
+        return self.cost_weight * (self.cost_radius - d) / self.cost_radius
 
     # ---------- A* ----------
 
@@ -195,7 +245,7 @@ class GlobalPlanner(Node):
                 nxt = (current[0] + dx, current[1] + dy)
                 if not self._is_free(nxt):
                     continue
-                tentative = g_score[current] + cost
+                tentative = g_score[current] + cost + self._cost_penalty(nxt)
                 if tentative < g_score.get(nxt, math.inf):
                     g_score[nxt] = tentative
                     f = tentative + heuristic(nxt, goal)
@@ -227,7 +277,6 @@ class GlobalPlanner(Node):
             return points
 
         simplified = [points[0]]
-        prev_dir = None
         for i in range(1, len(points) - 1):
             dx1 = points[i][0] - points[i - 1][0]
             dy1 = points[i][1] - points[i - 1][1]

@@ -1,0 +1,19 @@
+[0.802s] Invoking command in '/home/md/amr_final_ws/build/robile_localization': PYTHONPATH=/home/md/amr_final_ws/build/robile_localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/md/amr_final_ws/install/robile_localization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/md/amr_final_ws/build/robile_localization/build --no-deps symlink_data
+[1.125s] running develop
+[1.361s] running egg_info
+[1.361s] writing robile_localization.egg-info/PKG-INFO
+[1.362s] writing dependency_links to robile_localization.egg-info/dependency_links.txt
+[1.362s] writing entry points to robile_localization.egg-info/entry_points.txt
+[1.362s] writing requirements to robile_localization.egg-info/requires.txt
+[1.362s] writing top-level names to robile_localization.egg-info/top_level.txt
+[1.364s] reading manifest file 'robile_localization.egg-info/SOURCES.txt'
+[1.365s] writing manifest file 'robile_localization.egg-info/SOURCES.txt'
+[1.367s] running build_ext
+[1.367s] Creating /home/md/amr_final_ws/install/robile_localization/lib/python3.10/site-packages/robile-localization.egg-link (link to .)
+[1.368s] Installing particle_filter script to /home/md/amr_final_ws/install/robile_localization/lib/robile_localization
+[1.369s] 
+[1.369s] Installed /home/md/amr_final_ws/build/robile_localization
+[1.369s] running symlink_data
+[1.370s] symbolically linking /home/md/amr_final_ws/build/robile_localization/launch/amcl_localization.launch.py -> /home/md/amr_final_ws/install/robile_localization/share/robile_localization/launch
+[1.370s] symbolically linking /home/md/amr_final_ws/build/robile_localization/config/amcl_params.yaml -> /home/md/amr_final_ws/install/robile_localization/share/robile_localization/config
+[1.401s] Invoked command in '/home/md/amr_final_ws/build/robile_localization' returned '0': PYTHONPATH=/home/md/amr_final_ws/build/robile_localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/md/amr_final_ws/install/robile_localization/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/md/amr_final_ws/build/robile_localization/build --no-deps symlink_data

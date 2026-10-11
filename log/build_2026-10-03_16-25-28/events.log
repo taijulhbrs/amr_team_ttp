@@ -1,0 +1,99 @@
+[0.000000] (-) TimerEvent: {}
+[0.001600] (-) JobUnselected: {'identifier': 'kelo_tulip'}
+[0.001895] (-) JobUnselected: {'identifier': 'robile_description'}
+[0.004284] (-) JobUnselected: {'identifier': 'robile_exploration'}
+[0.004591] (-) JobUnselected: {'identifier': 'robile_gazebo'}
+[0.004668] (-) JobUnselected: {'identifier': 'robile_interfaces'}
+[0.004721] (-) JobUnselected: {'identifier': 'robile_localization'}
+[0.004770] (-) JobUnselected: {'identifier': 'robile_navigation'}
+[0.004848] (robile_planning) JobQueued: {'identifier': 'robile_planning', 'dependencies': OrderedDict()}
+[0.004970] (robile_planning) JobStarted: {'identifier': 'robile_planning'}
+[0.093251] (-) TimerEvent: {}
+[0.193780] (-) TimerEvent: {}
+[0.296304] (-) TimerEvent: {}
+[0.398097] (-) TimerEvent: {}
+[0.498796] (-) TimerEvent: {}
+[0.601226] (-) TimerEvent: {}
+[0.702403] (-) TimerEvent: {}
+[0.804499] (-) TimerEvent: {}
+[0.907519] (-) TimerEvent: {}
+[1.011045] (-) TimerEvent: {}
+[1.111576] (-) TimerEvent: {}
+[1.212047] (-) TimerEvent: {}
+[1.313849] (-) TimerEvent: {}
+[1.414455] (-) TimerEvent: {}
+[1.515491] (-) TimerEvent: {}
+[1.616485] (-) TimerEvent: {}
+[1.717898] (-) TimerEvent: {}
+[1.818581] (-) TimerEvent: {}
+[1.920308] (-) TimerEvent: {}
+[2.021216] (-) TimerEvent: {}
+[2.122559] (-) TimerEvent: {}
+[2.223382] (-) TimerEvent: {}
+[2.324542] (-) TimerEvent: {}
+[2.424952] (-) TimerEvent: {}
+[2.525876] (-) TimerEvent: {}
+[2.627729] (-) TimerEvent: {}
+[2.728191] (-) TimerEvent: {}
+[2.828801] (-) TimerEvent: {}
+[2.930515] (-) TimerEvent: {}
+[3.031759] (-) TimerEvent: {}
+[3.132562] (-) TimerEvent: {}
+[3.234026] (-) TimerEvent: {}
+[3.334693] (-) TimerEvent: {}
+[3.435528] (-) TimerEvent: {}
+[3.536035] (-) TimerEvent: {}
+[3.637769] (-) TimerEvent: {}
+[3.738713] (-) TimerEvent: {}
+[3.840197] (-) TimerEvent: {}
+[3.940952] (-) TimerEvent: {}
+[4.042091] (-) TimerEvent: {}
+[4.062707] (robile_planning) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/md/amr_final_ws/build/robile_planning/build', '--no-deps', 'symlink_data'], 'cwd': '/home/md/amr_final_ws/build/robile_planning', 'env': {'RCUTILS_LOGGING_BUFFERED_STREAM': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'md', 'ROS_PACKAGE_PATH': '/home/md/ros2_robot_ws/install/robot_interfaces/share', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/md/amr_final_ws/install/robile_interfaces/lib:/opt/mujoco/mujoco-3.9.0/lib:/opt/mujoco/mujoco-3.9.0/lib:/home/md/ros2_robot_ws/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/md', 'OLDPWD': '/home/md/amr_final_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '59264', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/md/amr_final_ws/install:/home/md/robile_ser_ws/install:/home/md/ros2_robot_ws/install:/home/md/Desktop/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'md', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/md/ros2_robot_ws/install/robot_interfaces/lib/x86_64-linux-gnu/pkgconfig:/home/md/ros2_robot_ws/install/robot_interfaces/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'md', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/md/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/md-HP-250-G7-Notebook-PC:@/tmp/.ICE-unix/1930,unix/md-HP-250-G7-Notebook-PC:/tmp/.ICE-unix/1930', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/home/md/ros2_network_config.xml', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/7988872e_a794_471a_b1b3_b103b7fd7042', 'GNOME_SETUP_DISPLAY': ':1', 'MUJOCO_PATH': '/opt/mujoco/mujoco-3.9.0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'MUJOCO_PY_MUJOCO_PATH': '/opt/mujoco/mujoco-3.9.0', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YKWBW3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.163', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/md/amr_final_ws/install/robile_planning:/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_localization:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/amr_final_ws/install/robile_exploration:/home/md/amr_final_ws/install/robile_description:/home/md/robile_ser_ws/install/diff_robot:/home/md/ros2_robot_ws/install/robot_task_pkg:/home/md/ros2_robot_ws/install/place_pkg:/home/md/ros2_robot_ws/install/pick_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg:/home/md/ros2_robot_ws/install/move_pkg:/home/md/Desktop/ros2_ws/install/test_package:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/md/amr_final_ws/build/robile_planning', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/md/amr_final_ws/build/robile_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/md/amr_final_ws/install/robile_planning/lib/python3.10/site-packages:/home/md/amr_final_ws/build/robile_planning:/home/md/amr_final_ws/install/robile_planning/lib/python3.10/site-packages:/home/md/amr_final_ws/install/robile_navigation/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/build/robile_localization:/home/md/amr_final_ws/install/robile_localization/lib/python3.10/site-packages:/home/md/amr_final_ws/install/robile_interfaces/local/lib/python3.10/dist-packages:/home/md/amr_final_ws/build/robile_exploration:/home/md/amr_final_ws/install/robile_exploration/lib/python3.10/site-packages:/home/md/robile_ser_ws/build/diff_robot:/home/md/robile_ser_ws/install/diff_robot/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/robot_task_pkg:/home/md/ros2_robot_ws/install/robot_task_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/place_pkg:/home/md/ros2_robot_ws/install/place_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/pick_pkg:/home/md/ros2_robot_ws/install/pick_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/perceive_plane_pkg:/home/md/ros2_robot_ws/install/perceive_plane_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/build/move_pkg:/home/md/ros2_robot_ws/install/move_pkg/lib/python3.10/site-packages:/home/md/ros2_robot_ws/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/md/Desktop/ros2_ws/install/test_package/lib/python3.10/site-packages:/home/md/Desktop/ros2_ws/install/gazebo_motion_nodes/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/md/amr_final_ws/install/robile_navigation:/home/md/amr_final_ws/install/robile_interfaces:/home/md/amr_final_ws/install/robile_gazebo:/home/md/ros2_robot_ws/install/robot_interfaces'}, 'shell': False}
+[4.142255] (-) TimerEvent: {}
+[4.243183] (-) TimerEvent: {}
+[4.344108] (-) TimerEvent: {}
+[4.444883] (-) TimerEvent: {}
+[4.546138] (-) TimerEvent: {}
+[4.647082] (-) TimerEvent: {}
+[4.748045] (-) TimerEvent: {}
+[4.848517] (-) TimerEvent: {}
+[4.949623] (-) TimerEvent: {}
+[5.050120] (-) TimerEvent: {}
+[5.151495] (-) TimerEvent: {}
+[5.252917] (-) TimerEvent: {}
+[5.353804] (-) TimerEvent: {}
+[5.455084] (-) TimerEvent: {}
+[5.556563] (-) TimerEvent: {}
+[5.620487] (robile_planning) StdoutLine: {'line': b'running develop\n'}
+[5.656836] (-) TimerEvent: {}
+[5.758297] (-) TimerEvent: {}
+[5.859680] (-) TimerEvent: {}
+[5.960278] (-) TimerEvent: {}
+[6.061229] (-) TimerEvent: {}
+[6.162410] (-) TimerEvent: {}
+[6.263089] (-) TimerEvent: {}
+[6.364676] (-) TimerEvent: {}
+[6.466363] (-) TimerEvent: {}
+[6.567207] (-) TimerEvent: {}
+[6.668008] (-) TimerEvent: {}
+[6.746408] (robile_planning) StdoutLine: {'line': b'running egg_info\n'}
+[6.747387] (robile_planning) StdoutLine: {'line': b'writing robile_planning.egg-info/PKG-INFO\n'}
+[6.748026] (robile_planning) StdoutLine: {'line': b'writing dependency_links to robile_planning.egg-info/dependency_links.txt\n'}
+[6.748542] (robile_planning) StdoutLine: {'line': b'writing entry points to robile_planning.egg-info/entry_points.txt\n'}
+[6.748908] (robile_planning) StdoutLine: {'line': b'writing requirements to robile_planning.egg-info/requires.txt\n'}
+[6.749293] (robile_planning) StdoutLine: {'line': b'writing top-level names to robile_planning.egg-info/top_level.txt\n'}
+[6.759834] (robile_planning) StdoutLine: {'line': b"reading manifest file 'robile_planning.egg-info/SOURCES.txt'\n"}
+[6.763903] (robile_planning) StdoutLine: {'line': b"writing manifest file 'robile_planning.egg-info/SOURCES.txt'\n"}
+[6.768525] (-) TimerEvent: {}
+[6.773222] (robile_planning) StdoutLine: {'line': b'running build_ext\n'}
+[6.773895] (robile_planning) StdoutLine: {'line': b'Creating /home/md/amr_final_ws/install/robile_planning/lib/python3.10/site-packages/robile-planning.egg-link (link to .)\n'}
+[6.779122] (robile_planning) StdoutLine: {'line': b'Installing global_planner script to /home/md/amr_final_ws/install/robile_planning/lib/robile_planning\n'}
+[6.779610] (robile_planning) StdoutLine: {'line': b'Installing potential_field_planner script to /home/md/amr_final_ws/install/robile_planning/lib/robile_planning\n'}
+[6.780275] (robile_planning) StdoutLine: {'line': b'\n'}
+[6.780600] (robile_planning) StdoutLine: {'line': b'Installed /home/md/amr_final_ws/build/robile_planning\n'}
+[6.780743] (robile_planning) StdoutLine: {'line': b'running symlink_data\n'}
+[6.868838] (-) TimerEvent: {}
+[6.965977] (robile_planning) CommandEnded: {'returncode': 0}
+[6.968878] (-) TimerEvent: {}
+[7.037626] (robile_planning) JobEnded: {'identifier': 'robile_planning', 'rc': 0}
+[7.042460] (-) EventReactorShutdown: {}
